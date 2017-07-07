@@ -9,10 +9,10 @@ NOW CONSTRUCTION
 2. Add html tag.
 
 ```
-<link rel="stylesheet" href="/css/hard-ui.css">
+<link rel="stylesheet" href="/path/to/hard-ui.css">
 ```
 
 ## Components
-See sample/index.html
+See index.html
 
 Get Hard..
