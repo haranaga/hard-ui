@@ -15,5 +15,4 @@ NOW CONSTRUCTION
 ## Components
 See sample/index.html
 
-Get Hard.
-
+Get Hard..
