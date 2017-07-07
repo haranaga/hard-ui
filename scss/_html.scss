@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    color: $color-text;
+    line-height: $line-height-base;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $color-background;
+    -webkit-font-smoothing: antialiased;
+    word-break: break-all;
+    // -webkit-font-smoothing: subpixel-antialiased;
+}
+
+header,footer,nav,section,main,article, aside, dialog, figcaption, figure, ul, p, dd {
+    display:block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size:1.0rem;
+    line-height: $object-height;
+    margin-top:$spacer;
+}
+h1 {
+    font-size: 2.0rem;
+    margin-top: $spacer *2;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-top: $spacer*1.5;
+}
+h3 {
+    font-size: 1.2rem;
+    margin-top: $spacer * 1.3;
+}
+
+
+ul {
+   list-style-position: inside;
+}
+ol {
+   list-style-type: decimal;
+   list-style-position: inside;
+}
+ul ul, ol ul {
+   list-style-position: inside;
+   margin-left: $spacer;
+}
+ol ol, ul ol {
+   list-style-type: decimal;
+   list-style-position: inside;
+   margin-left: $spacer;
+}
+
+dl dt {
+    font-weight: bold;
+    color: $color-label;
+}
+
+pre {
+    padding:0 $spacer;
+    background-color: $color-darken;
+    font-size:0.9rem;
+    overflow: scroll;
+}
+blockquote {
+    margin: 0 $spacer;
+}
+// mark
+mark {
+    @include invert-color;
+}
+
+// anchor text
+a {
+    color: $color-text;
+    @include transition;
+    &:hover {
+        @include invert-color;
+    }
+}
+
+// table
+table {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: $line-height-base;
+    font-size: 0.95rem;
+    thead,tfoot {
+        background-color: darken($color-background, 5%);
+    }
+    th {
+        color: $color-label;
+        font-weight: bold;
+        vertical-align: middle;
+        border:1px solid $color-line;
+        padding:0.5rem;
+    }
+    td {
+        vertical-align: top;
+        border: 1px solid $color-line;
+        padding:0.5rem;
+    }
+}
+
+// form
+ input, button, textarea {
+    font-size: 1.0rem;
+    background: none;
+    @include css3(appearance, none);
+    outline: none;
+    border: 1px solid $color-control;
+    @include css3(border-radius, 0);
+    @include transition;
+    vertical-align:middle;
+    border-radius: 0px;
+    height: $object-height;
+    padding: 0;
+}
+input {
+    min-width:12rem;
+    line-height: 1.5rem;
+}
+
+// button
+button, input[type="submit"], input[type="reset"], input[type="button"] {
+    min-width: 8rem;
+    line-height: $line-height-base;
+    font-size: 1rem;
+    font-weight: bold;
+    padding:0 $spacer;
+    @include invert-color;
+    cursor: pointer;
+    box-shadow:1px 1px 1px $color-shadow;
+    white-space: normal;
+    background-color: $color-control;
+    &:hover {
+        background-color: lighten($color-control, 5%);
+    }
+}
+textarea {
+    width:100%;
+}
+select {
+    // font-size:1.5rem;
+    border: 1px solid $color-control;
+    vertical-align:middle;
+    height: $object-height;
+}
+
+[type="checkbox"] {
+    @include css3(appearance, checkbox);
+    // @include css3(transform, scale(1.2));
+    width: 1rem;
+    min-width: 1rem;
+    cursor: pointer;
+    margin: 0;
+    vertical-align: middle;
+}
+
+
+input[type="radio"] {
+    min-width: 1rem;
+    @include css3(appearance, radio);
+    // @include css3(transform, scale(1.2));
+    width:1rem;
+    cursor: pointer;
+    margin: 0;
+    vertical-align: middle;
+}
+label {
+    color: $color-label;
+    vertical-align:middle;
+    line-height: $object-height;
+}
+fieldset {
+    border: 1px solid $color-line;
+}
+form label, legend {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: $color-label;
+    line-height: $object-height;
+}
+
+ins {
+    @include invert-color;
+}

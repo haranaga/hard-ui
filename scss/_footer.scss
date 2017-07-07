@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.hd-footer {
+    display:block;
+    background-color: $color-control;
+    color: $color-hilight;
+
+    .hd-footer-title {
+        font-weight: bold;
+        color:$color-hilight;
+        margin: 0 0 $spacer 0;
+    }
+    a {
+        color:$color-hilight;
+        text-decoration: none;
+    }
+}

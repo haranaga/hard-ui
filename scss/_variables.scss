@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+$font-family-base : "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", 游ゴシック体, "Yu Gothic", YuGothic, Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+$font-size-base: 16px;
+
+
+$line-height-base: 1.5rem;
+$object-height: 2.4rem;
+
+$spacer : 1rem;
+
+$color-brand : #333;
+$color-text  : #333;
+$color-line  : #666;
+$color-control : #333;
+$color-shadow : #999;
+$color-hilight : #CCC;
+$color-darken :  #EFEFEF;
+$color-background : #FFF;
+$color-label: #333;
+$color-flash: #FFF;
+$color-link: $color-brand;
+
+$grid-columns : 16;
+
+$breakpoints: (
+    s: 600px,
+    m: 960px,
+    l: 1280px,
+);

@@ -1,0 +1,22 @@
+@mixin invert-color {
+    background-color: $color-text;
+    color: $color-background;
+}
+
+@mixin css3($property, $value) {
+     @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+          #{$prefix}#{$property}: $value;
+     }
+}
+
+@mixin transition {
+    @include css3(transition, all 0.1s ease 0s);
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+    	display: table;
+    	clear: both;
+    }
+}
