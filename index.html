@@ -16,6 +16,10 @@
             /* for fixed nav */
             padding-top:40px;
         }
+        h2,h3 {
+            border-bottom: 1px solid #dedede;
+            margin-bottom: 16px;
+        }
     </style>
     <div class="hd-wrapper">
         <nav class="hd-nav hd-nav-fixed-top">
@@ -109,22 +113,19 @@
 
             <style media="screen">
                 .sample-box {
-                    /*height: 40px;*/
                     width: 100%;
                     background-color: #CCC;
                     color: #333;
                     text-align: center;
-                    /*margin:2px;*/
                     border:1px solid #fff;
                     line-height:40px;
-                    /*white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;*/
+                    font-size: 0.8rem;
+                    color:#666;
                 }
             </style>
             <section>
                 <h3>Columns(equally divided)</h3>
-                <label>2colmns</label>
+                <h4>2colmns</h4>
                 <div class="hd-cols hd-cols-2 hd-middle">
                     <div class="col"><div class="sample-box">col</div></div>
                     <div class="col"><div class="sample-box">col</div></div>
@@ -133,7 +134,7 @@
                     <div class="col"><div class="sample-box">col</div></div>
                     <div class="col"><div class="sample-box">col</div></div>
                 </div>
-                <label>3colmns</label>
+                <h4>3colmns</h4>
                 <div class="hd-cols hd-cols-3">
                     <div class="col"><div class="sample-box">col</div></div>
                     <div class="col"><div class="sample-box">col</div></div>
@@ -145,7 +146,7 @@
                     <div class="col"><div class="sample-box">col</div></div>
                     <div class="col"><div class="sample-box">col</div></div>
                 </div>
-                <label>4colmns</label>
+                <h4>4colmns</h4>
                 <div class="hd-cols hd-cols-4">
                     <div class="col"><div class="sample-box">col</div></div>
                     <div class="col"><div class="sample-box">col</div></div>
@@ -160,9 +161,8 @@
                     <div class="col"><div class="sample-box">col</div></div>
                     <div class="col"><div class="sample-box">col</div></div>
                 </div>
-                <label>...</label>
-                <label>16colmns</label>
-                <div class="hd-cols hd-cols-16">
+                <h4>...24colmns</h4>
+                <div class="hd-cols hd-cols-24">
                     <div class="col"><div class="sample-box">col</div></div>
                     <div class="col"><div class="sample-box">col</div></div>
                     <div class="col"><div class="sample-box">col</div></div>
@@ -234,7 +234,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <label>24 grid system, large:24col, small:1col</label>
+                <h4>24 grid system, large:24col, small:1col</h4>
                 <div class="hd-row hd-middle">
                     <div class="col-1"><div class="sample-box">col-1</div></div>
                     <div class="col-1"><div class="sample-box">col-1</div></div>
@@ -261,7 +261,7 @@
                     <div class="col-1"><div class="sample-box">col-1</div></div>
                     <div class="col-1"><div class="sample-box">col-1</div></div>
                 </div>
-                <label>large:2colmns, middle:4colmns, small:3colmns</label>
+                <h4>large:2colmns, middle:4colmns, small:3colmns</h4>
                 <div class="hd-row">
                     <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
                     <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
@@ -276,19 +276,19 @@
                     <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
                     <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
                 </div>
-                <label>12:12</label>
+                <h4>12:12</h4>
                 <div class="hd-row">
                     <div class="col-12 col-s-12"><div class="sample-box">col-12</div></div>
                     <div class="col-12 col-s-12"><div class="sample-box">col-12</div></div>
                 </div>
-                <label>column multiple width</label>
+                <h4>column multiple width</h4>
                 <div class="hd-row">
                     <div class="col-2"><div class="sample-box">col-2</div></div>
                     <div class="col-4"><div class="sample-box">col-4</div></div>
                     <div class="col-6"><div class="sample-box">col-6</div></div>
                     <div class="col-12"><div class="sample-box">col-12</div></div>
                 </div>
-                <label>offset</label>
+                <h4>offset</h4>
                 <div class="hd-row">
                     <div class="col-2"></div>
                     <div class="col-2"><div class="sample-box">col-2</div></div>
@@ -303,32 +303,107 @@
 
             <section>
                 <h3>Form</h3>
-                <h3>Form Block</h3>
-                <form class="hd-form hd-form-block hd-mg-2">
-                    <label class="hd-form-label" for="box">Text</label>
-                    <input type="text" name="box" id="box" value="" placeholder="Text box">
-                    <label class="hd-form-label" for="txtara">Textarea</label>
-                    <textarea name="txtara" id="txtara" value="" placeholder="Input text"></textarea>
-                    <label class="hd-form-label" for="slct">Select</label>
-                    <select class="hd-form-select" id="slct" name="slct">
-                        <option value="1">First</option>
-                        <option value="2">Second</option>
-                        <option value="3">Third</option>
-                        <option value="4">Forth</option>
-                        <option value="5">Fifth</option>
-                    </select>
+                <h4>Form Block</h4>
+                <form class="hd-form hd-form-block">
+                    <div class="hd-form-group">
+                        <label class="hd-form-label" for="box">Text</label>
+                        <input type="text" name="box" id="box" value="" placeholder="Text box">
+                    </div>
+                    <div class="hd-row">
+                        <div class="col-14">
+                            <div class="hd-form-group">
+                                <label class="hd-form-label" for="txtara">Textarea</label>
+                                <textarea name="txtara" id="txtara" value="" placeholder="Input text"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="hd-form-group">
+                                <label for="opttxt">column layout</label>
+                                <textarea name="opttxt" id="opttxt" value="" placeholder="Input text"></textarea>
+                            </div>
+                        </div>
+                    </div>
 
-                    <label class="hd-form-label" for="">Checkbox</label>
-                    <label for="chk1">
-                        <input type="checkbox" name="chk" id="chk1" value="1">
-                        <span>check1</span>
-                    </label>
-                    <label for="chk2">
-                        <input type="checkbox" name="cnk" id="chk2" value="2">
-                        <span>check2</span>
-                    </label>
-                    <label class="hd-form-label" for="">Radio</label>
-                    <div class="hd-form-inline">
+                    <div class="hd-row">
+                        <div class="col-12">
+                            <div class="hd-form-group">
+                                <label class="hd-form-label" for="slct1">Select</label>
+                                <select class="hd-form-select" id="slct1" name="slct2">
+                                    <option value="1">First</option>
+                                    <option value="2">Second</option>
+                                    <option value="3">Third</option>
+                                    <option value="4">Forth</option>
+                                    <option value="5">Fifth</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="hd-form-group">
+                                <label class="hd-form-label" for="slct2">Select</label>
+                                <select class="hd-form-select" id="slct2" name="slct2">
+                                    <option value="1">First</option>
+                                    <option value="2">Second</option>
+                                    <option value="3">Third</option>
+                                    <option value="4">Forth</option>
+                                    <option value="5">Fifth</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hd-form-group">
+                        <label class="hd-form-label" for="">Checkbox</label>
+                        <div class="hd-form-inline">
+                            <label for="chk1">
+                                <input type="checkbox" name="chk" id="chk1" value="1">
+                                <span>check1</span>
+                            </label>
+                            <label for="chk2">
+                                <input type="checkbox" name="cnk" id="chk2" value="2">
+                                <span>check2</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hd-form-group">
+                        <label class="hd-form-label" for="">Radio</label>
+                        <div class="hd-form-inline">
+                            <label for="rdo1">
+                                <input type="radio" name="rdo" id="rdo1" value="1">
+                                <span>opt1</span>
+                            </label>
+                            <label for="rdo2">
+                                <input type="radio" name="rdo" id="rdo2" value="2">
+                                <span>opt2</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+
+                <h4>Form Inline</h4>
+                <form class="hd-form hd-form-inline">
+                    <div class="hd-form-group">
+                        <label class="hd-form-label" for="search">Search</label>
+                        <input type="text" name="search" value="" placeholder="Search">
+                    </div>
+                    <div class="hd-form-group">
+                        <select class="hd-form-select" id="slct2" name="slct">
+                            <option value="1">First</option>
+                            <option value="2">Second</option>
+                            <option value="3">Third</option>
+                            <option value="4">Forth</option>
+                            <option value="5">Fifth</option>
+                        </select>
+                    </div>
+                    <div class="hd-form-group">
+                        <label for="chk1">
+                            <input type="checkbox" name="chk" id="chk1" value="1">
+                            <span>check1</span>
+                        </label>
+                        <label for="chk2">
+                            <input type="checkbox" name="cnk" id="chk2" value="2">
+                            <span>check2</span>
+                        </label>
+                    </div>
+                    <div class="hd-form-group">
                         <label for="rdo1">
                             <input type="radio" name="rdo" id="rdo1" value="1">
                             <span>opt1</span>
@@ -338,35 +413,6 @@
                             <span>opt2</span>
                         </label>
                     </div>
-                </form>
-
-                <h3>Form Inline</h3>
-                <form class="hd-form hd-form-inline hd-mg-2">
-                    <label class="hd-form-label" for="search">Search</label>
-                    <input type="text" name="search" value="" placeholder="Search">
-                    <select class="hd-form-select" id="slct2" name="slct">
-                        <option value="1">First</option>
-                        <option value="2">Second</option>
-                        <option value="3">Third</option>
-                        <option value="4">Forth</option>
-                        <option value="5">Fifth</option>
-                    </select>
-                    <label for="chk1">
-                        <input type="checkbox" name="chk" id="chk1" value="1">
-                        <span>check1</span>
-                    </label>
-                    <label for="chk2">
-                        <input type="checkbox" name="cnk" id="chk2" value="2">
-                        <span>check2</span>
-                    </label>
-                    <label for="rdo1">
-                        <input type="radio" name="rdo" id="rdo1" value="1">
-                        <span>opt1</span>
-                    </label>
-                    <label for="rdo2">
-                        <input type="radio" name="rdo" id="rdo2" value="2">
-                        <span>opt2</span>
-                    </label>
                 </form>
             </section>
 

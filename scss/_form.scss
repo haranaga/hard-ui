@@ -6,6 +6,7 @@
     background-color: $color-focus;
 }
 
+
 .hd-form {
 
     label {
@@ -61,6 +62,10 @@
         height: $line-height-base;
     }
 
+    .hd-form-group {
+        padding: #{$spacer/2};
+    }
+
 }
 
 .hd-form-inline {
@@ -74,6 +79,12 @@
     [type="checkbox"],[type="radio"] {
         display:inline-block;
         width:auto;
+    }
+
+    .hd-form-group {
+        display:inline;
+        margin-right:$spacer;
+        // padding: $spacer;
     }
 
 }

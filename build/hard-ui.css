@@ -1990,6 +1990,9 @@ ins {
   width: auto;
   height: 1.5rem;
 }
+.hd-form-block .hd-form-group {
+  padding: 0.5rem;
+}
 
 .hd-form-inline {
   display: inline;
@@ -2003,6 +2006,10 @@ ins {
 .hd-form-inline [type="checkbox"], .hd-form-inline [type="radio"] {
   display: inline-block;
   width: auto;
+}
+.hd-form-inline .hd-form-group {
+  display: inline;
+  margin-right: 1rem;
 }
 
 .hd-form-label {
