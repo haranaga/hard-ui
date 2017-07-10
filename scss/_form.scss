@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
+.hd-form-control {
+    padding-top:0.4rem;
+    padding-bottom:0.4rem;
+    background-color: $color-focus;
+}
+
 .hd-form {
+
     label {
         line-height: $line-height-base;
     }
@@ -13,7 +20,7 @@
         height: $object-height;
         font-size: 1rem;
         border:0;
-        outline: 1px solid $color-control;
+        outline: 1px solid $color-line;
         outline-offset: -1px;
         background-color: $color-background;
 
@@ -22,6 +29,8 @@
         }
     }
     textarea {
+        @include css3(box-sizing, border-box);
+        height: #{$object-height * 3};
     }
     [type="checkbox"],[type="radio"] {
         display:inline-block;
@@ -52,10 +61,6 @@
         height: $line-height-base;
     }
 
-    input+input {
-        margin-top:$spacer;
-    }
-
 }
 
 .hd-form-inline {
@@ -64,15 +69,11 @@
     label, input, select, textarea {
         display:inline-block;
         vertical-align: middle;
-
+        margin:4px 0;
     }
     [type="checkbox"],[type="radio"] {
         display:inline-block;
         width:auto;
-    }
-
-    label+label {
-        margin: 0 0 0 $spacer ;
     }
 
 }

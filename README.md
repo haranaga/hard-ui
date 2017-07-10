@@ -5,7 +5,7 @@ HARD-UI is a Web ui flamework.
 * lightweight
 
 ## Status
-NOW CONSTRUCTION
+under construction
 
 ## Get started
 1. Download hard-ui.js or hard-ui.min.js.

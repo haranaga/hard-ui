@@ -27,39 +27,82 @@
 	clear: both;
 }
 
+.hd-cols {
+    &.hd-middle {
+    	@include flex-vertical-align( center );
+    }
+    &.hd-top {
+        @include flex-vertical-align( start );
+    }
+    &.hd-bottom {
+        @include flex-vertical-align( flex-end );
+    }
+}
+
 @for $i from 1 through $grid-columns {
     .hd-cols-#{$i} {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
         width: 100%;
         .col {
             display:block;
-            float:left;
+            // float:left;
             width: #{100%/$i};
         }
         @include clearfix;
     }
 }
 
+
 .hd-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    @for $i from 1 through $grid-columns {
-        .col-#{$i} {
-            display:block;
-            min-width: #{100%/$grid-columns * $i};
-        }
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    width: 100%;
+
+    &.hd-middle {
+    	@include flex-vertical-align( center );
+    }
+    &.hd-top {
+        @include flex-vertical-align( start );
+    }
+    &.hd-bottom {
+        @include flex-vertical-align( flex-end );
+    }
+
+}
+
+
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        width: #{100%/$grid-columns * $i};
+        max-width: #{100%/$grid-columns * $i};
     }
 }
+
 @each $media, $width in $breakpoints {
     @media screen and (max-width: $width) {
-        @if $media == s {
-            .hd-row {
-                display:block;
-                @for $i from 1 through $grid-columns {
-                    .col-#{$i} {
-                        width: 100%;
-                    }
+        @for $i from 1 through $grid-columns {
+            .col-#{$media}-#{$i} {
+                width: #{100%/$grid-columns * $i};
+                max-width: #{100%/$grid-columns * $i};
+            }
+            @if $media == s {
+                .col-#{$i} {
+                    width: 100%;
+                    max-width: 100%;
                 }
             }
         }
+
     }
 }

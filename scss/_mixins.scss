@@ -20,3 +20,10 @@
     	clear: both;
     }
 }
+
+@mixin flex-vertical-align($position) {
+    -ms-flex-align: $position;
+    -webkit-align-items: $position;
+    -webkit-box-align: $position;
+    align-items: $position;
+}

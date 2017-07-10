@@ -11,21 +11,26 @@
     <link rel="stylesheet" href="build/hard-ui.css">
 </head>
 <body>
+    <style media="screen">
+        body {
+            /* for fixed nav */
+            padding-top:40px;
+        }
+    </style>
     <div class="hd-wrapper">
-        <nav class="hd-nav nav-fixed">
+        <nav class="hd-nav hd-nav-fixed-top">
             <ul class="hd-nav-x hd-nav-end">
-                <li class="hd-nav-brand"><p>HARD-UI</p></li>
+                <li class="hd-nav-brand"><a href="index.html">hard-ui</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#getstart">Get Started</a></li>
+                <li><a href="#getstarted">Get Started</a></li>
                 <li><a href="#components">Components</a></li>
-                <li><a href="#git">Git</a></li>
+                <li><a href="https://github.com/haranaga/hard-ui" target="_blank">Git</a></li>
                 <li><p>v0.0.1</p></li>
             </ul>
         </nav>
 
-        <header class="hd-mgt-4 hd-mgb-2">
-            <img src="sample/hard-ui.png" alt="HARD-UI" class="hd-center" alt="HARD-UI" width="200" height="200">
-            <h1 class="hd-center">HARD-UI</h1>
+        <header class="hd-header">
+            <a href="index.html" class="hd-header-brand left">HARD-UI</a>
         </header>
 
 
@@ -33,14 +38,15 @@
             <a name="about"></a>
             <section>
                 <h3 class="nl-title">About HARD-UI</h1>
-                <p>
-                    HARD-UI is a simple & lightweight CSS without any Javascript.<br>
-                    No roundness. No softness. No complexness.<br>
-                    Yes, responsive framework.
-                </p>
+                    <ul>
+                        <li>Web ui framework</li>
+                        <li>without Javascript</li>
+                        <li>responsive</li>
+                        <li>24 grid</li>
+                    </ul>
                 <h4>Status</h4>
                 <p>
-                    NOW CONSTRUCTION
+                    Under construction
                 </p>
             </section>
             <a name="getstarted"></a>
@@ -59,101 +65,14 @@
 
             </section>
 
-            <a name="compornents"></a>
+            <a name="components"></a>
             <section>
                 <h2>Compornents</h2>
             </section>
             <section>
-                <h3>Nav horizontal default</h3>
+                <h3>Nav horizontal</h3>
                 <nav class="hd-nav">
                     <ul class="hd-nav-x">
-                        <li><p>HARD-UI</p></li>
-                        <li><a href="#">Menu1</a></li>
-                        <li><a href="#">Menu2</a></li>
-                        <li><a href="#">Menu3</a></li>
-                        <li><a href="#">Menu4</a></li>
-                        <li><p>Text</p></li>
-                    </ul>
-                </nav>
-
-                <pre class="hd-mg-1">
-<code>
-&lt;nav class="hd-nav"&gt;
-    &lt;ul class="hd-nav-x"&gt;
-        &lt;li&gt;&lt;p&gt;HARD-UI&lt;/p&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu3&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu4&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;p&gt;Text&lt;/p&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;
-</code>
-                </pre>
-            </section>
-
-            <section>
-                <h3>Nav horizontal center</h3>
-                <nav class="hd-nav">
-                    <ul class="hd-nav-x hd-nav-center">
-                        <li><p>HARD-UI</p></li>
-                        <li><a href="#">Menu1</a></li>
-                        <li><a href="#">Menu2</a></li>
-                        <li><a href="#">Menu3</a></li>
-                        <li><a href="#">Menu4</a></li>
-                        <li><p>Text</p></li>
-                    </ul>
-                </nav>
-
-                <pre class="hd-mg-1">
-<code>
-&lt;nav class="hd-nav"&gt;
-    &lt;ul class="hd-nav-x hd-nav-center"&gt;
-        &lt;li&gt;&lt;p&gt;HARD-UI&lt;/p&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu3&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu4&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;p&gt;Text&lt;/p&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;
-</code>
-                </pre>
-            </section>
-
-            <section>
-                <h3>Nav horizontal end</h3>
-                <nav class="hd-nav">
-                    <ul class="hd-nav-x hd-nav-end">
-                        <li><p>HARD-UI</p></li>
-                        <li><a href="#">Menu1</a></li>
-                        <li><a href="#">Menu2</a></li>
-                        <li><a href="#">Menu3</a></li>
-                        <li><a href="#">Menu4</a></li>
-                        <li><p>Text</p></li>
-                    </ul>
-                </nav>
-
-                <pre class="hd-mg-1">
-<code>
-&lt;nav class="hd-nav"&gt;
-    &lt;ul class="hd-nav-x hd-nav-end"&gt;
-        &lt;li&gt;&lt;p&gt;HARD-UI&lt;/p&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu3&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu4&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;p&gt;Text&lt;/p&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;
-</code>
-                </pre>
-            </section>
-
-            <section>
-                <h3>Nav horizontal brand left</h3>
-                <nav class="hd-nav">
-                    <ul class="hd-nav-x hd-nav-end">
                         <li class="hd-nav-brand"><p>HARD-UI</p></li>
                         <li><a href="#">Menu1</a></li>
                         <li><a href="#">Menu2</a></li>
@@ -162,324 +81,223 @@
                         <li><p>Text</p></li>
                     </ul>
                 </nav>
+            </section>
 
-                <pre class="hd-mg-1">
-<code>
-&lt;nav class="hd-nav"&gt;
-    &lt;ul class="hd-nav-x hd-nav-end"&gt;
-        &lt;li class="hd-nav-brand"&gt;&lt;p&gt;HARD-UI&lt;/p&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu3&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Menu4&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;p&gt;Text&lt;/p&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;
-</code>
-                </pre>
+            <section>
+                <h3>Nav vertical</h3>
+                <div class="hd-row">
+                    <div class="col-8">
+
+                    </div>
+                    <div class="col-8">
+                        <nav class="hd-nav">
+                            <ul class="hd-nav-y left">
+                                <li class="hd-nav-brand"><p>HARD-UI</p></li>
+                                <li><a href="#">Menu1</a></li>
+                                <li><a href="#">Menu2</a></li>
+                                <li><a href="#">Menu3</a></li>
+                                <li><a href="#">Menu4</a></li>
+                                <li><p>Text</p></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-8">
+
+                    </div>
+                </div>
             </section>
 
             <style media="screen">
                 .sample-box {
-                    height: 40px;
+                    /*height: 40px;*/
                     width: 100%;
-                    background-color: #666;
-                    color: #FFF;
+                    background-color: #CCC;
+                    color: #333;
                     text-align: center;
-                    margin:2px;
-                    border:1px solid #ccc;
+                    /*margin:2px;*/
+                    border:1px solid #fff;
                     line-height:40px;
+                    /*white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;*/
                 }
             </style>
             <section>
-                <h3>Columns, Equally divided grid</h3>
+                <h3>Columns(equally divided)</h3>
                 <label>2colmns</label>
-                <div class="hd-cols-2">
-                    <div class="col">
-                        <div class="sample-box">col</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">col</div>
-                    </div>
+                <div class="hd-cols hd-cols-2 hd-middle">
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
                 </div>
                 <label>3colmns</label>
-                <div class="hd-cols-3">
-                    <div class="col">
-                        <div class="sample-box">col</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">col</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">col</div>
-                    </div>
+                <div class="hd-cols hd-cols-3">
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
                 </div>
                 <label>4colmns</label>
-                <div class="hd-cols-4">
-                    <div class="col">
-                        <div class="sample-box">col</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">col</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">col</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">col</div>
-                    </div>
+                <div class="hd-cols hd-cols-4">
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
                 </div>
                 <label>...</label>
                 <label>16colmns</label>
-                <div class="hd-cols-16">
-                    <div class="col">
-                        <div class="sample-box">1</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">2</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">3</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">4</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">5</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">6</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">7</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">8</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">9</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">10</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">11</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">12</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">13</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">14</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">15</div>
-                    </div>
-                    <div class="col">
-                        <div class="sample-box">16</div>
-                    </div>
+                <div class="hd-cols hd-cols-16">
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
+                    <div class="col"><div class="sample-box">col</div></div>
                 </div>
-
-                <pre class="hd-mg-1">
-<code>
-&lt;div class="hd-cols-16"&gt;
-    &lt;div class="col"&gt;
-        &lt;!--content--&gt;
-    &lt;/div&gt;
-    &lt;div class="col"&gt;
-        &lt;!--content--&gt;
-    &lt;/div&gt;
-       .....
-        ...
-         .
-    &lt;div class="col"&gt;
-        &lt;!--content--&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code>
-                </pre>
             </section>
 
             <section>
                 <h3>Grid</h3>
-                <label>Max 16 cols</label>
-                <div class="hd-row">
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-
+                <table>
+                    <thead>
+                        <tr>
+                            <th>default</th>
+                            <th>small(&le;600px)</th>
+                            <th>middle(&le;960px)</th>
+                            <th>large(&le;1280px)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>col-*</code></td>
+                            <td><code>col-s-*</code></td>
+                            <td><code>col-m-*</code></td>
+                            <td><code>col-l-*</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <label>24 grid system, large:24col, small:1col</label>
+                <div class="hd-row hd-middle">
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
+                    <div class="col-1"><div class="sample-box">col-1</div></div>
                 </div>
-                <label>8:8</label>
+                <label>large:2colmns, middle:4colmns, small:3colmns</label>
                 <div class="hd-row">
-                    <div class="col-8">
-                        <div class="sample-box">
-                            col-8
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <div class="sample-box">
-                            col-4
-                        </div>
-                    </div>
+                    <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
+                    <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
+                    <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
+                    <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
+                    <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
+                    <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
+                    <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
+                    <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
+                    <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
+                    <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
+                    <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
+                    <div class="col-2 col-m-4 col-s-8"><div class="sample-box">col-2,4,8</div></div>
                 </div>
-                <label>column width 1-16</label>
+                <label>12:12</label>
                 <div class="hd-row">
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="sample-box">
-                            col-2
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="sample-box">
-                            col-3
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="sample-box">
-                            col-4
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="sample-box">
-                            col-6
-                        </div>
-                    </div>
+                    <div class="col-12 col-s-12"><div class="sample-box">col-12</div></div>
+                    <div class="col-12 col-s-12"><div class="sample-box">col-12</div></div>
                 </div>
-                <label>offset 1-16</label>
+                <label>column multiple width</label>
                 <div class="hd-row">
-                    <div class="col-1">
-                        <div class="sample-box">
-                            col-1
-                        </div>
-                    </div>
-                    <div class="col-2">
-
-                    </div>
-                    <div class="col-3">
-                        <div class="sample-box">
-                            col-3
-                        </div>
-                    </div>
-                    <div class="col-4">
-                    </div>
-                    <div class="col-5">
-                        <div class="sample-box">
-                            col-5
-                        </div>
-                    </div>
-                    <div class="col-1">
-                    </div>
+                    <div class="col-2"><div class="sample-box">col-2</div></div>
+                    <div class="col-4"><div class="sample-box">col-4</div></div>
+                    <div class="col-6"><div class="sample-box">col-6</div></div>
+                    <div class="col-12"><div class="sample-box">col-12</div></div>
                 </div>
-                <pre class="hd-mg-1">
-<code>
-&lt;div class="hd-row"&gt;
-    &lt;div class="col-1"&gt;
-        &lt;div class="sample-box"&gt;
-            col-1
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-2"&gt;
-
-    &lt;/div&gt;
-    &lt;div class="col-3"&gt;
-        &lt;div class="sample-box"&gt;
-            col-3
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-4"&gt;
-    &lt;/div&gt;
-    &lt;div class="col-5"&gt;
-        &lt;div class="sample-box"&gt;
-            col-5
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code>
-                </pre>
+                <label>offset</label>
+                <div class="hd-row">
+                    <div class="col-2"></div>
+                    <div class="col-2"><div class="sample-box">col-2</div></div>
+                    <div class="col-4"></div>
+                    <div class="col-4"><div class="sample-box">col-4</div></div>
+                    <div class="col-2"></div>
+                    <div class="col-8"><div class="sample-box">col-8</div></div>
+                    <div class="col-2"></div>
+                </div>
             </section>
 
 
@@ -489,11 +307,8 @@
                 <form class="hd-form hd-form-block hd-mg-2">
                     <label class="hd-form-label" for="box">Text</label>
                     <input type="text" name="box" id="box" value="" placeholder="Text box">
-                    <label class="hd-form-label" for="pwd">Password</label>
-                    <input type="password" name="pwd" id="pwd" value="" placeholder="Password">
-                    <label class="hd-form-label" for="search">Search</label>
-                    <input type="text" name="search" id="search" value="" placeholder="Search">
-                    <input type="text" name="search" id="search" value="" placeholder="Search">
+                    <label class="hd-form-label" for="txtara">Textarea</label>
+                    <textarea name="txtara" id="txtara" value="" placeholder="Input text"></textarea>
                     <label class="hd-form-label" for="slct">Select</label>
                     <select class="hd-form-select" id="slct" name="slct">
                         <option value="1">First</option>
@@ -527,13 +342,15 @@
 
                 <h3>Form Inline</h3>
                 <form class="hd-form hd-form-inline hd-mg-2">
-                    <label class="hd-form-label" for="box">Text</label>
-                    <input type="text" name="box" value="" placeholder="Text box">
-                    <label class="hd-form-label" for="pwd">Password</label>
-                    <input type="password" name="pwd" value="" placeholder="Password">
                     <label class="hd-form-label" for="search">Search</label>
                     <input type="text" name="search" value="" placeholder="Search">
-                    <label class="hd-form-label" for="">Checkbox</label>
+                    <select class="hd-form-select" id="slct2" name="slct">
+                        <option value="1">First</option>
+                        <option value="2">Second</option>
+                        <option value="3">Third</option>
+                        <option value="4">Forth</option>
+                        <option value="5">Fifth</option>
+                    </select>
                     <label for="chk1">
                         <input type="checkbox" name="chk" id="chk1" value="1">
                         <span>check1</span>
@@ -542,7 +359,6 @@
                         <input type="checkbox" name="cnk" id="chk2" value="2">
                         <span>check2</span>
                     </label>
-                    <label class="hd-form-label" for="">Radio</label>
                     <label for="rdo1">
                         <input type="radio" name="rdo" id="rdo1" value="1">
                         <span>opt1</span>
@@ -551,15 +367,6 @@
                         <input type="radio" name="rdo" id="rdo2" value="2">
                         <span>opt2</span>
                     </label>
-                    <label for="slct2">Select</label>
-                    <select class="hd-form-select" id="slct2" name="slct">
-                        <option value="1">First</option>
-                        <option value="2">Second</option>
-                        <option value="3">Third</option>
-                        <option value="4">Forth</option>
-                        <option value="5">Fifth</option>
-                    </select>
-
                 </form>
             </section>
 

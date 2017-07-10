@@ -19,12 +19,17 @@ $color-darken :  #EFEFEF;
 $color-background : #FFF;
 $color-label: #333;
 $color-flash: #FFF;
-$color-link: $color-brand;
+$color-link: #182aa8;
+$color-focus: #333;
 
-$grid-columns : 16;
+$grid-columns : 24;
+
+$breakpoint-s: 600px;
+$breakpoint-m: 960px;
+$breakpoint-l: 1280px;
 
 $breakpoints: (
-    s: 600px,
-    m: 960px,
-    l: 1280px,
+    l: $breakpoint-l,
+    m: $breakpoint-m,
+    s: $breakpoint-s,
 );

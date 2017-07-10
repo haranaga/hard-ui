@@ -75,10 +75,10 @@ mark {
 
 // anchor text
 a {
-    color: $color-text;
+    color: $color-link;
     @include transition;
     &:hover {
-        @include invert-color;
+        color: lighten($color-link, 10%);
     }
 }
 
@@ -118,6 +118,11 @@ table {
     border-radius: 0px;
     height: $object-height;
     padding: 0;
+
+    &:focus {
+        border-color: $color-focus;
+    }
+
 }
 input {
     min-width:12rem;
@@ -142,12 +147,18 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
 }
 textarea {
     width:100%;
+    padding: $spacer;
 }
 select {
     // font-size:1.5rem;
-    border: 1px solid $color-control;
+    border: 1px solid $color-line;
     vertical-align:middle;
     height: $object-height;
+
+    &:focus {
+        border-color: $color-focus;
+    }
+
 }
 
 [type="checkbox"] {
@@ -158,6 +169,11 @@ select {
     cursor: pointer;
     margin: 0;
     vertical-align: middle;
+
+    &:focus {
+        border-color: $color-focus;
+    }
+
 }
 
 
@@ -169,6 +185,11 @@ input[type="radio"] {
     cursor: pointer;
     margin: 0;
     vertical-align: middle;
+
+    &:focus {
+        border-color: $color-focus;
+    }
+
 }
 label {
     color: $color-label;
@@ -187,4 +208,12 @@ form label, legend {
 
 ins {
     @include invert-color;
+}
+
+:target:before {
+    content:"";
+    display:block;
+    height:40px; /* fixed header height*/
+    margin:-40px 0 0; /* negative fixed header height */
+
 }
