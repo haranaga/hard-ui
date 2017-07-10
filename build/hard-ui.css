@@ -213,12 +213,12 @@ table th {
   color: #333;
   font-weight: bold;
   vertical-align: middle;
-  border: 1px solid #666;
+  border: 1px solid #ddd;
   padding: 0.5rem;
 }
 table td {
   vertical-align: top;
-  border: 1px solid #666;
+  border: 1px solid #ddd;
   padding: 0.5rem;
 }
 
@@ -231,7 +231,7 @@ input, button, textarea {
   -o-appearance: none;
   appearance: none;
   outline: none;
-  border: 1px solid #333;
+  border: 1px solid #ddd;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -313,7 +313,7 @@ label {
 }
 
 fieldset {
-  border: 1px solid #666;
+  border: 1px solid #ddd;
 }
 
 form label, legend {

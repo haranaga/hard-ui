@@ -1,5 +1,8 @@
 # hard-ui
-HARD-UI is a simple &amp; lightweight CSS without any Javascript. No roundness. No softness. No complexness. Yes, responsive framework.
+HARD-UI is a Web ui flamework.
+* without Javascript
+* responsive
+* lightweight
 
 ## Status
 NOW CONSTRUCTION
@@ -12,7 +15,5 @@ NOW CONSTRUCTION
 <link rel="stylesheet" href="/path/to/hard-ui.css">
 ```
 
-## Components
-See index.html
-
-Get Hard..
+## Demo & Document
+[HARD-UI](http://www.hard-ui.com/)

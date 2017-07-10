@@ -111,7 +111,7 @@ table {
     background: none;
     @include css3(appearance, none);
     outline: none;
-    border: 1px solid $color-control;
+    border: 1px solid $color-line;
     @include css3(border-radius, 0);
     @include transition;
     vertical-align:middle;
