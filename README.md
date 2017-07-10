@@ -8,7 +8,7 @@ HARD-UI is a Web ui flamework.
 under construction
 
 ## Get started
-1. Download hard-ui.js or hard-ui.min.js.
+1. Download hard-ui.css or hard-ui.min.css.
 2. Add html tag.
 
 ```
