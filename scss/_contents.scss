@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+.hd-contents-rows {
+    list-style: none;
+}
+
+.hd-contents-cols {
+}
+
+.hd-content {
+    position:relative;
+}
+
+.hd-content-image {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.hd-content-title {
+    display: block;
+    overflow: hidden;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: $color-text;
+    font-weight: bold;
+    height:3.2rem;
+    width: auto;
+    margin-bottom: 0.5rem;
+}
+.hd-content-description {
+    display:block;
+    overflow: hidden;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: lighten($color-text, 10%);
+    height: 3.6rem;
+    width: auto;
+}
+.hd-content-footer {
+    display: block;
+    overflow: hidden;
+    font-size: 0.8rem;
+    line-height: 2.5rem;
+    color: lighten($color-text, 15%);
+
+    &.text-right {
+        text-align: right;
+    }
+}
+
+
+.hd-contents-rows {
+    .hd-content {
+        display: inline;
+        font-size:0;
+
+        .hd-content-image {
+            display:inline-block;
+            width:25%;
+            height: auto;
+            font-size:1rem;
+        }
+        .hd-content-body {
+            position: relative;
+            display:inline-block;
+            width:75%;
+            height: 100%;
+            font-size:1rem;
+            padding-left: $spacer;
+            vertical-align: top;
+        }
+    }
+
+}
+
+
+@media screen and  (min-width: $breakpoint-l) {
+    .hd-contents-rows {
+        .hd-content-title {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            height: 6rem;
+
+        }
+        .hd-content-description {
+            height: 6.0rem;
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-m) and (max-width: $breakpoint-m) {
+    .hd-contents-rows {
+        .hd-content-title {
+            height: 3.2rem;
+
+        }
+        .hd-content-description {
+            height: 3.6rem;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-s) {
+    .hd-contents-rows {
+        .hd-content-title {
+            font-size: 1.0rem;
+            line-height: 1.2rem;
+            height: 2.4rem;
+            margin-bottom: 0.2rem;
+        }
+        .hd-content-description {
+            font-size:0.8rem;
+            height: 1.2rem;
+        }
+        .hd-content-footer {
+            font-size: 0.75rem;
+            line-height: 1.5rem;
+        }
+    }
+}

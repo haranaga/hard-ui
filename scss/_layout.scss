@@ -27,6 +27,12 @@
 	clear: both;
 }
 
+.hd-list {
+    margin:$spacer 0;
+}
+.hd-card {
+    margin:0 $spacer
+}
 .hd-cols {
     &.hd-middle {
     	@include flex-vertical-align( center );
@@ -83,7 +89,7 @@
 
 
 @for $i from 1 through $grid-columns {
-    .col-#{$i} {
+    .col-#{$i}, .col-s-#{$i}, .col-m-#{$i}, .col-l-#{$i},  {
         width: #{100%/$grid-columns * $i};
         max-width: #{100%/$grid-columns * $i};
     }

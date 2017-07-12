@@ -2,6 +2,11 @@
 
 
 @for $i from 1 through 6 {
+
+    .hd-border-#{$i} {
+        border: #{$i}px solid $color-background;
+    }
+
     .hd-mg-#{$i} {
         margin: #{$spacer * $i};
     }

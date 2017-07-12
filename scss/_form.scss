@@ -18,16 +18,25 @@
         padding: 0 $spacer;
     }
     select {
+        position: relative;
+        @include css3(appearance, none);
         height: $object-height;
         font-size: 1rem;
         border:0;
         outline: 1px solid $color-line;
         outline-offset: -1px;
         background-color: $color-background;
+        padding: 0 $spacer;
 
-        option {
-            padding: 0 $spacer;
-        }
+        background-color: transparent;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10px' width='15px'%3E%3Ctext x='0' y='10' fill='gray'%3E%E2%96%BE%3C/text%3E%3C/svg%3E");
+
+        background-repeat: no-repeat;
+        background-size: 1.5EM 1EM;
+        background-position: right center;
+        background-clip: border-box;
+        -moz-background-clip: border-box;
+        -webkit-background-clip: border-box;
     }
     textarea {
         @include css3(box-sizing, border-box);
