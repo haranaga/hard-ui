@@ -22,6 +22,7 @@
         @include css3(appearance, none);
         height: $object-height;
         font-size: 1rem;
+        font-weight: normal;
         border:0;
         outline: 1px solid $color-line;
         outline-offset: -1px;
@@ -51,21 +52,16 @@
         height: 1.5rem;
         border: 1px solid $color-line;
         background: #fff;
-
-        // margin-right: 10px;
+        margin: 3px 0;
 
         &:checked:before {
             content: "";
             position: absolute;
-            // vertical-align: middle;
-            // border: 1px solid $color-control;
             background: $color-control;
             left: 3px;
             top: 3px;
             width: 1.0rem;
             height: 1.0rem;
-            // background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10px' width='15px'%3E%3Ctext x='0' y='10' fill='gray'%3E%E2%96%BE%3C/text%3E%3C/svg%3E") left bottom;
-
         }
     }
     [type="radio"] {

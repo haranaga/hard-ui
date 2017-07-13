@@ -333,7 +333,6 @@ fieldset {
 }
 
 form label, legend {
-  font-weight: bold;
   font-size: 0.8rem;
   color: #333;
   line-height: 2.4rem;
@@ -1990,6 +1989,7 @@ ins {
   appearance: none;
   height: 2.4rem;
   font-size: 1rem;
+  font-weight: normal;
   border: 0;
   outline: 1px solid #ddd;
   outline-offset: -1px;
@@ -2025,6 +2025,7 @@ ins {
   height: 1.5rem;
   border: 1px solid #ddd;
   background: #fff;
+  margin: 3px 0;
 }
 .hd-form [type="checkbox"]:checked:before, .hd-form [type="radio"]:checked:before {
   content: "";
