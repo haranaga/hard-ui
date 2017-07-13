@@ -43,8 +43,8 @@
         height: #{$object-height * 3};
     }
     [type="checkbox"],[type="radio"] {
-        display:inline-block;
-        width:auto;
+        //display:inline-block;
+        //width:auto;
         vertical-align: middle;
     }
 }

@@ -2013,8 +2013,6 @@ ins {
   height: 7.2rem;
 }
 .hd-form [type="checkbox"], .hd-form [type="radio"] {
-  display: inline-block;
-  width: auto;
   vertical-align: middle;
 }
 
