@@ -102,8 +102,14 @@
                 width: #{100%/$grid-columns * $i};
                 max-width: #{100%/$grid-columns * $i};
             }
+            @if $media == m {
+                .col-l-#{$i} {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
             @if $media == s {
-                .col-#{$i} {
+                .col-#{$i}, .col-m-#{$i}, .col-l-#{$i} {
                     width: 100%;
                     max-width: 100%;
                 }

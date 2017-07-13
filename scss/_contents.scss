@@ -113,10 +113,16 @@
         .hd-content-description {
             font-size:0.8rem;
             height: 1.2rem;
+            &:empty {
+                display: none;
+            }
         }
         .hd-content-footer {
             font-size: 0.75rem;
             line-height: 1.5rem;
+        }
+        .hd-content-body {
+            vertical-align: middle;
         }
     }
 }
