@@ -1972,7 +1972,7 @@ ins {
 .hd-form label {
   line-height: 1.5rem;
 }
-.hd-form input {
+.hd-form input[type="text"], .hd-form input[type="password"], .hd-form input[type="search"] {
   height: 2.4rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2013,7 +2013,33 @@ ins {
   height: 7.2rem;
 }
 .hd-form [type="checkbox"], .hd-form [type="radio"] {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
   vertical-align: middle;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.hd-form [type="checkbox"]:checked:before, .hd-form [type="radio"]:checked:before {
+  content: "";
+  position: absolute;
+  background: #333;
+  left: 3px;
+  top: 3px;
+  width: 1.0rem;
+  height: 1.0rem;
+}
+.hd-form [type="radio"] {
+  border-radius: 100%;
+}
+.hd-form [type="radio"]:checked:before {
+  border-radius: 100%;
 }
 
 .hd-form-block label {
@@ -2033,8 +2059,6 @@ ins {
 }
 .hd-form-block [type="checkbox"], .hd-form-block [type="radio"] {
   display: inline-block;
-  width: auto;
-  height: 1.5rem;
 }
 .hd-form-block .hd-form-group {
   padding: 0.5rem;
@@ -2051,7 +2075,6 @@ ins {
 }
 .hd-form-inline [type="checkbox"], .hd-form-inline [type="radio"] {
   display: inline-block;
-  width: auto;
 }
 .hd-form-inline .hd-form-group {
   display: inline;
