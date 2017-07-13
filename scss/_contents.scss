@@ -57,14 +57,14 @@
 
         .hd-content-image {
             display:inline-block;
-            width:25%;
+            width:27%;
             height: auto;
             font-size:1rem;
         }
         .hd-content-body {
             position: relative;
             display:inline-block;
-            width:75%;
+            width:73%;
             height: 100%;
             font-size:1rem;
             padding-left: $spacer;
@@ -78,13 +78,15 @@
 @media screen and  (min-width: $breakpoint-l) {
     .hd-contents-rows {
         .hd-content-title {
-            font-size: 1.3rem;
-            line-height: 2rem;
-            height: 6rem;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            height: 6.6rem;
 
         }
         .hd-content-description {
-            height: 6.0rem;
+            font-size: 1.1rem;
+            line-height: 2rem;
+            height: 10rem;
         }
     }
 }
