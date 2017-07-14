@@ -7,3 +7,18 @@
         background-color: $color !important;
     }
 }
+
+.btn-nav-top {
+    position: fixed;
+    display:block;
+    width:2rem;
+    height:2rem;
+    bottom: 1rem;
+    right:1rem;
+    line-height:2rem;
+    color:#FFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    border:1px solid $color-line;
+}
