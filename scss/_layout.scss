@@ -99,7 +99,7 @@
 // phone
 @media screen and (max-width: $breakpoint-s) {
     @for $i from 1 through $grid-columns {
-        .col-m-#{$i}, .col-l-#{$i} {
+        .col-#{$i}, .col-m-#{$i}, .col-l-#{$i} {
             width: 100%;
             max-width: 100%;
         }
