@@ -76,7 +76,7 @@
     label {
         display:block;
     }
-    input {
+    input[type="text"], input[type="password"], input[type="search"], input[type="date"] {
         display:block;
         width:100%;
     }

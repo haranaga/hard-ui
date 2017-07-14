@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.hd-card {
+    display:block;
+    margin: $spacer;
+    border: 1px solid $color-line;
+
+    .hd-card-image {
+        width: 100%;
+    }
+
+    .hd-card-body {
+        padding: $spacer;
+    }
+
+    .hd-card-header {
+        padding:$spacer/2;
+        border-bottom: 1px solid $color-line;
+    }
+
+    .hd-card-footer {
+        padding:$spacer/2;
+        border-top: 1px solid $color-line;
+    }
+
+    table {
+        margin:0;
+        border: none;
+    }
+
+}

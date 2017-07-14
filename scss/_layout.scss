@@ -88,6 +88,7 @@
 }
 
 
+// common
 @for $i from 1 through $grid-columns {
     .col-#{$i}, .col-s-#{$i}, .col-m-#{$i}, .col-l-#{$i},  {
         width: #{100%/$grid-columns * $i};
@@ -95,26 +96,40 @@
     }
 }
 
-@each $media, $width in $breakpoints {
-    @media screen and (max-width: $width) {
-        @for $i from 1 through $grid-columns {
-            .col-#{$media}-#{$i} {
-                width: #{100%/$grid-columns * $i};
-                max-width: #{100%/$grid-columns * $i};
-            }
-            @if $media == m {
-                .col-l-#{$i} {
-                    width: 100%;
-                    max-width: 100%;
-                }
-            }
-            @if $media == s {
-                .col-#{$i}, .col-m-#{$i}, .col-l-#{$i} {
-                    width: 100%;
-                    max-width: 100%;
-                }
-            }
+// phone
+@media screen and (max-width: $breakpoint-s) {
+    @for $i from 1 through $grid-columns {
+        .col-m-#{$i}, .col-l-#{$i} {
+            width: 100%;
+            max-width: 100%;
         }
+        .col-s-#{$i} {
+            width: #{100%/$grid-columns * $i} !important;
+            max-width: #{100%/$grid-columns * $i} !important;
+        }
+    }
+}
 
+// big phone, small tablet
+@media screen and (min-width: $breakpoint-s) and (max-width: $breakpoint-m) {
+    @for $i from 1 through $grid-columns {
+        .col-l-#{$i} {
+            width: 100%;
+            max-width: 100%;
+        }
+        .col-m-#{$i} {
+            width: #{100%/$grid-columns * $i} !important;
+            max-width: #{100%/$grid-columns * $i} !important;
+        }
+    }
+}
+
+// big tablet, pc
+@media screen and (min-width: $breakpoint-m) {
+    @for $i from 1 through $grid-columns {
+        .col-l-#{$i} {
+            width: #{100%/$grid-columns * $i} !important;
+            max-width: #{100%/$grid-columns * $i} !important;
+        }
     }
 }

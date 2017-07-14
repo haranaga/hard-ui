@@ -36,6 +36,11 @@
     color: lighten($color-text, 10%);
     height: 3.6rem;
     width: auto;
+
+    &:empty {
+        display: none;
+    }
+
 }
 .hd-content-footer {
     display: block;
@@ -77,52 +82,85 @@
 
 @media screen and  (min-width: $breakpoint-l) {
     .hd-contents-rows {
-        .hd-content-title {
-            font-size: 1.4rem;
-            line-height: 2.2rem;
-            height: 6.6rem;
+        .hd-content {
+            .hd-content-image {
+                width:240px;
+                height:240px;
+            }
+            .hd-content-title {
+                font-size: 1.4rem;
+                line-height: 2.1rem;
+                height: 4.1rem;
 
-        }
-        .hd-content-description {
-            font-size: 1.1rem;
-            line-height: 2rem;
-            height: 10rem;
+            }
+            .hd-content-description {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                height: 6rem;
+            }
         }
     }
 }
-@media screen and (min-width: $breakpoint-m) and (max-width: $breakpoint-m) {
+@media screen and (min-width: $breakpoint-m) and (max-width: $breakpoint-l) {
     .hd-contents-rows {
-        .hd-content-title {
-            height: 3.2rem;
+        .hd-content {
 
+            .hd-content-image {
+                width:180px;
+                height:180px;
+            }
+            .hd-content-title {
+                height: 3.2rem;
+
+            }
+            .hd-content-description {
+                height: 3.6rem;
+            }
         }
-        .hd-content-description {
-            height: 3.6rem;
+    }
+}
+
+@media screen and (min-width: $breakpoint-s) and (max-width: $breakpoint-m) {
+    .hd-contents-rows {
+        .hd-content {
+
+            .hd-content-image {
+                width:140px;
+                height:140px;
+            }
+            .hd-content-title {
+                height: 3.2rem;
+
+            }
+            .hd-content-description {
+                height: 3.6rem;
+            }
         }
     }
 }
 
 @media screen and (max-width: $breakpoint-s) {
     .hd-contents-rows {
-        .hd-content-title {
-            font-size: 1.0rem;
-            line-height: 1.2rem;
-            height: 2.4rem;
-            margin-bottom: 0.2rem;
-        }
-        .hd-content-description {
-            font-size:0.8rem;
-            height: 1.2rem;
-            &:empty {
-                display: none;
+        .hd-content {
+            .hd-content-image {
+                width:92px;
+                height:92px;
             }
-        }
-        .hd-content-footer {
-            font-size: 0.75rem;
-            line-height: 1.5rem;
-        }
-        .hd-content-body {
-            vertical-align: middle;
+
+            .hd-content-title {
+                font-size: 1.0rem;
+                line-height: 1.2rem;
+                height: 2.4rem;
+                margin-bottom: 0.2rem;
+            }
+            .hd-content-description {
+                font-size:0.8rem;
+                height: 1.2rem;
+            }
+            .hd-content-footer {
+                font-size: 0.75rem;
+                line-height: 1.5rem;
+            }
         }
     }
 }

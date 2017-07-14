@@ -109,7 +109,7 @@ table {
 }
 
 // form
- input, button, textarea {
+ input[type="text"],input[type="password"], textarea {
     font-size: 1.0rem;
     background: none;
     @include css3(appearance, none);
@@ -144,6 +144,9 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
     box-shadow:1px 1px 1px $color-shadow;
     white-space: normal;
     background-color: $color-control;
+    border:none;
+    height:$object-height;
+
     &:hover {
         background-color: lighten($color-control, 5%);
     }

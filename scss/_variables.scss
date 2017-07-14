@@ -19,7 +19,7 @@ $color-darken :  #EFEFEF;
 $color-background : #FFF;
 $color-label: #333;
 $color-flash: #FFF;
-$color-link: #182aa8;
+$color-link: #000;
 $color-focus: #333;
 
 $grid-columns : 24;
@@ -32,4 +32,10 @@ $breakpoints: (
     l: $breakpoint-l,
     m: $breakpoint-m,
     s: $breakpoint-s,
+);
+
+$btn-colors : (
+    "default": $color-control,
+    "gray": lighten($color-control,15%),
+    "white": lighten($color-control, 40%)
 );
