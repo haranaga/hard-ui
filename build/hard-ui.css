@@ -356,9 +356,18 @@ ins {
 
 .hd-wrapper {
   margin: 0 auto;
-  width: 100vw;
+  width: 100%;
 }
 
+.hd-container {
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .hd-container {
+    margin: 0 0.33333rem;
+  }
+}
 .hd-center {
   display: block;
   min-width: 100px;
@@ -2422,6 +2431,16 @@ ins {
 .hd-card table {
   margin: 0;
   border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .hd-card {
+    margin: 1rem 0;
+    border: initial;
+  }
+  .hd-card .hd-card-body {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=hard-ui.css.map */

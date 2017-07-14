@@ -2,7 +2,15 @@
 
 .hd-wrapper {
     margin:0 auto;
-    width: 100vw;
+    width: 100%;
+}
+.hd-container {
+    margin:0 $spacer*2;
+}
+@media screen and (max-width:$breakpoint-s) {
+    .hd-container {
+        margin:0 $spacer/3;
+    }
 }
 
 .hd-center {

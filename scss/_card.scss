@@ -29,3 +29,14 @@
     }
 
 }
+
+@media screen and (max-width: $breakpoint-s) {
+    .hd-card {
+        margin:$spacer 0;
+        border:initial;
+
+        .hd-card-body {
+            padding: 0;
+        }
+    }
+}
