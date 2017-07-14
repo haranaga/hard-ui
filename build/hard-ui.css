@@ -2261,6 +2261,9 @@ ins {
   position: relative;
   width: 100%;
 }
+.hd-content a {
+  text-decoration: none;
+}
 
 .hd-content-body {
   display: block;
@@ -2306,10 +2309,15 @@ ins {
 .hd-content-footer.text-right {
   text-align: right;
 }
+.hd-content-footer:empty {
+  display: none;
+}
 
 .hd-contents-rows .hd-content {
   display: flex;
+  align-items: center;
   margin: 1rem 0;
+  width: 100%;
 }
 .hd-contents-rows .hd-content .hd-content-image {
   display: block;
@@ -2318,6 +2326,7 @@ ins {
 .hd-contents-rows .hd-content .hd-content-body {
   position: relative;
   display: block;
+  width: 100%;
   padding-left: 1rem;
   vertical-align: middle;
 }
@@ -2340,8 +2349,8 @@ ins {
 }
 @media screen and (min-width: 960px) and (max-width: 1280px) {
   .hd-contents-rows .hd-content .hd-content-image {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
   .hd-contents-rows .hd-content .hd-content-title {
     height: 3.2rem;
@@ -2352,11 +2361,13 @@ ins {
 }
 @media screen and (min-width: 600px) and (max-width: 960px) {
   .hd-contents-rows .hd-content .hd-content-image {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
   }
   .hd-contents-rows .hd-content .hd-content-title {
-    height: 3.2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    height: 3rem;
   }
   .hd-contents-rows .hd-content .hd-content-description {
     height: 3.6rem;
@@ -2412,7 +2423,7 @@ ins {
 
 .hd-card {
   display: block;
-  margin: 1rem;
+  margin: 1rem 0.5rem;
   border: 1px solid #ddd;
 }
 .hd-card .hd-card-image {
@@ -2436,11 +2447,10 @@ ins {
 
 @media screen and (max-width: 600px) {
   .hd-card {
-    margin: 1rem 0;
-    border: initial;
+    margin: 1rem 0.33333rem;
   }
   .hd-card .hd-card-body {
-    padding: 0;
+    padding: 1rem 0.33333rem;
   }
 }
 
