@@ -531,26 +531,66 @@
                     </div>
                 </div>
                 <h4>12:12</h4>
-                <div class="hd-row">
-                    <div class="col-12 col-s-12"><div class="sample-box">col-12</div></div>
-                    <div class="col-12 col-s-12"><div class="sample-box">col-12</div></div>
+                <div class="hd-card">
+                    <div class="hd-card-body">
+                        <div class="hd-row">
+                            <div class="col-12 col-s-12"><div class="sample-box">col-12</div></div>
+                            <div class="col-12 col-s-12"><div class="sample-box">col-12</div></div>
+                        </div>
+                    </div>
+                    <div class="hd-card-body">
+<pre class="brush: xml">&lt;div class=&quot;hd-row&quot;&gt;
+    &lt;div class=&quot;col-12&quot;&gt;col-12&lt;/div&gt;
+    &lt;div class=&quot;col-12&quot;&gt;col-12&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
                 </div>
                 <h4>column multiple width</h4>
-                <div class="hd-row">
-                    <div class="col-2"><div class="sample-box">col-2</div></div>
-                    <div class="col-4"><div class="sample-box">col-4</div></div>
-                    <div class="col-6"><div class="sample-box">col-6</div></div>
-                    <div class="col-12"><div class="sample-box">col-12</div></div>
+                <div class="hd-card">
+                    <div class="hd-card-body">
+                        <div class="hd-row">
+                            <div class="col-2"><div class="sample-box">col-2</div></div>
+                            <div class="col-4"><div class="sample-box">col-4</div></div>
+                            <div class="col-6"><div class="sample-box">col-6</div></div>
+                            <div class="col-12"><div class="sample-box">col-12</div></div>
+                        </div>
+                    </div>
+                    <div class="hd-card-body">
+<pre class="brush: xml">&lt;div class=&quot;hd-row&quot;&gt;
+    &lt;div class=&quot;col-2&quot;&gt;col-2&lt;/div&gt;
+    &lt;div class=&quot;col-4&quot;&gt;col-4&lt;/div&gt;
+    &lt;div class=&quot;col-6&quot;&gt;col-6&lt;/div&gt;
+    &lt;div class=&quot;col-12&quot;&gt;col-12&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
                 </div>
                 <h4>offset</h4>
-                <div class="hd-row">
-                    <div class="col-2"></div>
-                    <div class="col-2"><div class="sample-box">col-2</div></div>
-                    <div class="col-4"></div>
-                    <div class="col-4"><div class="sample-box">col-4</div></div>
-                    <div class="col-2"></div>
-                    <div class="col-8"><div class="sample-box">col-8</div></div>
-                    <div class="col-2"></div>
+                <div class="hd-card">
+                    <div class="hd-card-body">
+                        <div class="hd-row">
+                            <div class="col-2"></div>
+                            <div class="col-2"><div class="sample-box">col-2</div></div>
+                            <div class="col-4"></div>
+                            <div class="col-4"><div class="sample-box">col-4</div></div>
+                            <div class="col-2"></div>
+                            <div class="col-8"><div class="sample-box">col-8</div></div>
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+                    <div class="hd-card-body">
+<pre class="brush: xml">&lt;div class=&quot;hd-row&quot;&gt;
+    &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;col-2&lt;/div&gt;
+    &lt;div class=&quot;col-4&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-4&quot;&gt;col-4&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-8&quot;&gt;col-8&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
                 </div>
             </section>
 
@@ -1146,6 +1186,7 @@
     </div>
     <script type="text/javascript">
         SyntaxHighlighter.defaults['gutter'] = false;
+        SyntaxHighlighter.defaults['collapse'] = true;
         SyntaxHighlighter.all();
     </script>
 </body>
