@@ -179,7 +179,7 @@ pre {
   padding: 0 1rem;
   background-color: #EFEFEF;
   font-size: 0.9rem;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 blockquote {
