@@ -2259,6 +2259,11 @@ ins {
 
 .hd-content {
   position: relative;
+  width: 100%;
+}
+
+.hd-content-body {
+  display: block;
 }
 
 .hd-content-image {
@@ -2303,23 +2308,18 @@ ins {
 }
 
 .hd-contents-rows .hd-content {
-  display: inline;
-  font-size: 0;
+  display: flex;
+  margin: 1rem 0;
 }
 .hd-contents-rows .hd-content .hd-content-image {
-  display: inline-block;
-  width: 27%;
+  display: block;
   height: auto;
-  font-size: 1rem;
 }
 .hd-contents-rows .hd-content .hd-content-body {
   position: relative;
-  display: inline-block;
-  width: 73%;
-  height: 100%;
-  font-size: 1rem;
+  display: block;
   padding-left: 1rem;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 1280px) {
@@ -2366,6 +2366,7 @@ ins {
   .hd-contents-rows .hd-content .hd-content-image {
     width: 92px;
     height: 92px;
+    max-width: 92px;
   }
   .hd-contents-rows .hd-content .hd-content-title {
     font-size: 1.0rem;

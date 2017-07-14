@@ -580,124 +580,254 @@
             <section>
                 <h3>Form</h3>
                 <h4>Form Block</h4>
-                <form class="hd-form hd-form-block">
-                    <div class="hd-form-group">
-                        <label class="hd-form-label" for="box">Text</label>
-                        <input type="text" name="box" id="box" value="" placeholder="Text box">
-                    </div>
-                    <div class="hd-row">
-                        <div class="col-14">
+                <div class="hd-card">
+                    <div class="hd-card-body">
+                        <form class="hd-form hd-form-block">
                             <div class="hd-form-group">
-                                <label class="hd-form-label" for="txtara">Textarea</label>
-                                <textarea name="txtara" id="txtara" value="" placeholder="Input text"></textarea>
+                                <label class="hd-form-label" for="box">Text</label>
+                                <input type="text" name="box" id="box" value="" placeholder="Text box">
                             </div>
-                        </div>
-                        <div class="col-10">
-                            <div class="hd-form-group">
-                                <label class="hd-form-label" for="opttxt">Column layout</label>
-                                <textarea name="opttxt" id="opttxt" value="" placeholder="Input text"></textarea>
+                            <div class="hd-row">
+                                <div class="col-14">
+                                    <div class="hd-form-group">
+                                        <label class="hd-form-label" for="txtara">Textarea</label>
+                                        <textarea name="txtara" id="txtara" value="" placeholder="Input text"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="hd-form-group">
+                                        <label class="hd-form-label" for="opttxt">Column layout</label>
+                                        <textarea name="opttxt" id="opttxt" value="" placeholder="Input text"></textarea>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="hd-row">
-                        <div class="col-12">
-                            <div class="hd-form-group">
-                                <label class="hd-form-label" for="slct1">Select</label>
-                                <select class="hd-form-select" id="slct1" name="slct2">
-                                    <option value="1">First</option>
-                                    <option value="2">Second</option>
-                                    <option value="3">Third</option>
-                                    <option value="4">Forth</option>
-                                    <option value="5">Fifth</option>
-                                </select>
+                            <div class="hd-row">
+                                <div class="col-12">
+                                    <div class="hd-form-group">
+                                        <label class="hd-form-label" for="slct1">Select</label>
+                                        <select class="hd-form-select" id="slct1" name="slct2">
+                                            <option value="1">First</option>
+                                            <option value="2">Second</option>
+                                            <option value="3">Third</option>
+                                            <option value="4">Forth</option>
+                                            <option value="5">Fifth</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="hd-form-group">
+                                        <label class="hd-form-label" for="slct2">Select</label>
+                                        <select class="hd-form-select" id="slct2" name="slct2">
+                                            <option value="1">First</option>
+                                            <option value="2">Second</option>
+                                            <option value="3">Third</option>
+                                            <option value="4">Forth</option>
+                                            <option value="5">Fifth</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12">
                             <div class="hd-form-group">
-                                <label class="hd-form-label" for="slct2">Select</label>
-                                <select class="hd-form-select" id="slct2" name="slct2">
-                                    <option value="1">First</option>
-                                    <option value="2">Second</option>
-                                    <option value="3">Third</option>
-                                    <option value="4">Forth</option>
-                                    <option value="5">Fifth</option>
-                                </select>
+                                <label class="hd-form-label" for="">Checkbox</label>
+                                <label for="chk11">
+                                    <input type="checkbox" name="chk" id="chk11" value="1">
+                                    check1
+                                </label>
+                                <label for="chk12">
+                                    <input type="checkbox" name="cnk" id="chk12" value="2">
+                                    check2
+                                </label>
                             </div>
-                        </div>
+                            <div class="hd-form-group">
+                                <label class="hd-form-label" for="">Radio</label>
+                                <label for="rdo11">
+                                    <input type="radio" name="rdo" id="rdo11" value="1">
+                                    opt1
+                                </label>
+                                <label for="rdo12">
+                                    <input type="radio" name="rdo" id="rdo12" value="2">
+                                    opt2
+                                </label>
+                            </div>
+                            <div class="hd-form-group">
+                                <input type="submit" name="btn" value="Default Button">
+                                <input type="submit" class="hd-btn-default" name="btn" value="hd-btn-default">
+                                <input type="submit" class="hd-btn-gray" name="btn" value="hd-btn-gray">
+                                <input type="submit" class="hd-btn-white" name="btn" value="hd-btn-white">
+                            </div>
+                        </form>
                     </div>
-                    <div class="hd-form-group">
-                        <label class="hd-form-label" for="">Checkbox</label>
-                        <label for="chk11">
-                            <input type="checkbox" name="chk" id="chk11" value="1">
-                            check1
-                        </label>
-                        <label for="chk12">
-                            <input type="checkbox" name="cnk" id="chk12" value="2">
-                            check2
-                        </label>
+                    <div class="hd-card-body">
+<pre><code>&lt;form class=&quot;hd-form hd-form-block&quot;&gt;
+    &lt;div class=&quot;hd-form-group&quot;&gt;
+        &lt;label class=&quot;hd-form-label&quot; for=&quot;box&quot;&gt;Text&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;box&quot; id=&quot;box&quot; value=&quot;&quot; placeholder=&quot;Text box&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hd-row&quot;&gt;
+        &lt;div class=&quot;col-14&quot;&gt;
+            &lt;div class=&quot;hd-form-group&quot;&gt;
+                &lt;label class=&quot;hd-form-label&quot; for=&quot;txtara&quot;&gt;Textarea&lt;/label&gt;
+                &lt;textarea name=&quot;txtara&quot; id=&quot;txtara&quot; value=&quot;&quot; placeholder=&quot;Input text&quot;&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-10&quot;&gt;
+            &lt;div class=&quot;hd-form-group&quot;&gt;
+                &lt;label class=&quot;hd-form-label&quot; for=&quot;opttxt&quot;&gt;Column layout&lt;/label&gt;
+                &lt;textarea name=&quot;opttxt&quot; id=&quot;opttxt&quot; value=&quot;&quot; placeholder=&quot;Input text&quot;&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;hd-row&quot;&gt;
+        &lt;div class=&quot;col-12&quot;&gt;
+            &lt;div class=&quot;hd-form-group&quot;&gt;
+                &lt;label class=&quot;hd-form-label&quot; for=&quot;slct1&quot;&gt;Select&lt;/label&gt;
+                &lt;select class=&quot;hd-form-select&quot; id=&quot;slct1&quot; name=&quot;slct2&quot;&gt;
+                    &lt;option value=&quot;1&quot;&gt;First&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;Second&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;Third&lt;/option&gt;
+                    &lt;option value=&quot;4&quot;&gt;Forth&lt;/option&gt;
+                    &lt;option value=&quot;5&quot;&gt;Fifth&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12&quot;&gt;
+            &lt;div class=&quot;hd-form-group&quot;&gt;
+                &lt;label class=&quot;hd-form-label&quot; for=&quot;slct2&quot;&gt;Select&lt;/label&gt;
+                &lt;select class=&quot;hd-form-select&quot; id=&quot;slct2&quot; name=&quot;slct2&quot;&gt;
+                    &lt;option value=&quot;1&quot;&gt;First&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;Second&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;Third&lt;/option&gt;
+                    &lt;option value=&quot;4&quot;&gt;Forth&lt;/option&gt;
+                    &lt;option value=&quot;5&quot;&gt;Fifth&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hd-form-group&quot;&gt;
+        &lt;label class=&quot;hd-form-label&quot; for=&quot;&quot;&gt;Checkbox&lt;/label&gt;
+        &lt;label for=&quot;chk11&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;chk&quot; id=&quot;chk11&quot; value=&quot;1&quot;&gt;
+            check1
+        &lt;/label&gt;
+        &lt;label for=&quot;chk12&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;cnk&quot; id=&quot;chk12&quot; value=&quot;2&quot;&gt;
+            check2
+        &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hd-form-group&quot;&gt;
+        &lt;label class=&quot;hd-form-label&quot; for=&quot;&quot;&gt;Radio&lt;/label&gt;
+        &lt;label for=&quot;rdo11&quot;&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;rdo&quot; id=&quot;rdo11&quot; value=&quot;1&quot;&gt;
+            opt1
+        &lt;/label&gt;
+        &lt;label for=&quot;rdo12&quot;&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;rdo&quot; id=&quot;rdo12&quot; value=&quot;2&quot;&gt;
+            opt2
+        &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hd-form-group&quot;&gt;
+        &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Default Button&quot;&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;hd-btn-default&quot; name=&quot;btn&quot; value=&quot;hd-btn-default&quot;&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;hd-btn-gray&quot; name=&quot;btn&quot; value=&quot;hd-btn-gray&quot;&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;hd-btn-white&quot; name=&quot;btn&quot; value=&quot;hd-btn-white&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
                     </div>
-                    <div class="hd-form-group">
-                        <label class="hd-form-label" for="">Radio</label>
-                        <label for="rdo11">
-                            <input type="radio" name="rdo" id="rdo11" value="1">
-                            opt1
-                        </label>
-                        <label for="rdo12">
-                            <input type="radio" name="rdo" id="rdo12" value="2">
-                            opt2
-                        </label>
-                    </div>
-                    <div class="hd-form-group">
-                        <input type="submit" name="btn" value="Default Button">
-                        <input type="submit" class="hd-btn-default" name="btn" value="hd-btn-default">
-                        <input type="submit" class="hd-btn-gray" name="btn" value="hd-btn-gray">
-                        <input type="submit" class="hd-btn-white" name="btn" value="hd-btn-white">
-                    </div>
-                </form>
+                </div>
 
                 <h4>Form Inline</h4>
-                <form class="hd-form hd-form-inline">
-                    <div class="hd-form-group">
-                        <label class="hd-form-label" for="search">Search</label>
-                        <input type="text" name="search" value="" placeholder="Search">
+                <div class="hd-card">
+                    <div class="hd-card-body">
+                        <form class="hd-form hd-form-inline">
+                            <div class="hd-form-group">
+                                <label class="hd-form-label" for="search">Search</label>
+                                <input type="text" name="search" value="" placeholder="Search">
+                            </div>
+                            <div class="hd-form-group">
+                                <select class="hd-form-select" id="slct2" name="slct">
+                                    <option value="1">First</option>
+                                    <option value="2">Second</option>
+                                    <option value="3">Third</option>
+                                    <option value="4">Forth</option>
+                                    <option value="5">Fifth</option>
+                                </select>
+                            </div>
+                            <div class="hd-form-group">
+                                <label for="chk21">
+                                    <input type="checkbox" name="chk" id="chk21" value="1">
+                                    check1
+                                </label>
+                                <label for="chk22">
+                                    <input type="checkbox" name="cnk" id="chk22" value="2">
+                                    check2
+                                </label>
+                            </div>
+                            <div class="hd-form-group">
+                                <label for="rdo21">
+                                    <input type="radio" name="rdo" id="rdo21" value="1">
+                                    opt1
+                                </label>
+                                <label for="rdo22">
+                                    <input type="radio" name="rdo" id="rdo22" value="2">
+                                    opt2
+                                </label>
+                            </div>
+                            <div class="hd-form-group">
+                                <input type="submit" name="btn" value="Default Button">
+                                <input type="submit" class="hd-btn-default" name="btn" value="hd-btn-default">
+                                <input type="submit" class="hd-btn-gray" name="btn" value="hd-btn-gray">
+                                <input type="submit" class="hd-btn-white" name="btn" value="hd-btn-white">
+                            </div>
+                        </form>
                     </div>
-                    <div class="hd-form-group">
-                        <select class="hd-form-select" id="slct2" name="slct">
-                            <option value="1">First</option>
-                            <option value="2">Second</option>
-                            <option value="3">Third</option>
-                            <option value="4">Forth</option>
-                            <option value="5">Fifth</option>
-                        </select>
+                    <div class="hd-card-body">
+<pre><code>&lt;form class=&quot;hd-form hd-form-inline&quot;&gt;
+    &lt;div class=&quot;hd-form-group&quot;&gt;
+        &lt;label class=&quot;hd-form-label&quot; for=&quot;search&quot;&gt;Search&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;search&quot; value=&quot;&quot; placeholder=&quot;Search&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hd-form-group&quot;&gt;
+        &lt;select class=&quot;hd-form-select&quot; id=&quot;slct2&quot; name=&quot;slct&quot;&gt;
+            &lt;option value=&quot;1&quot;&gt;First&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;Second&lt;/option&gt;
+            &lt;option value=&quot;3&quot;&gt;Third&lt;/option&gt;
+            &lt;option value=&quot;4&quot;&gt;Forth&lt;/option&gt;
+            &lt;option value=&quot;5&quot;&gt;Fifth&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hd-form-group&quot;&gt;
+        &lt;label for=&quot;chk21&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;chk&quot; id=&quot;chk21&quot; value=&quot;1&quot;&gt;
+            check1
+        &lt;/label&gt;
+        &lt;label for=&quot;chk22&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;cnk&quot; id=&quot;chk22&quot; value=&quot;2&quot;&gt;
+            check2
+        &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hd-form-group&quot;&gt;
+        &lt;label for=&quot;rdo21&quot;&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;rdo&quot; id=&quot;rdo21&quot; value=&quot;1&quot;&gt;
+            opt1
+        &lt;/label&gt;
+        &lt;label for=&quot;rdo22&quot;&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;rdo&quot; id=&quot;rdo22&quot; value=&quot;2&quot;&gt;
+            opt2
+        &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hd-form-group&quot;&gt;
+        &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Default Button&quot;&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;hd-btn-default&quot; name=&quot;btn&quot; value=&quot;hd-btn-default&quot;&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;hd-btn-gray&quot; name=&quot;btn&quot; value=&quot;hd-btn-gray&quot;&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;hd-btn-white&quot; name=&quot;btn&quot; value=&quot;hd-btn-white&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
                     </div>
-                    <div class="hd-form-group">
-                        <label for="chk21">
-                            <input type="checkbox" name="chk" id="chk21" value="1">
-                            check1
-                        </label>
-                        <label for="chk22">
-                            <input type="checkbox" name="cnk" id="chk22" value="2">
-                            check2
-                        </label>
-                    </div>
-                    <div class="hd-form-group">
-                        <label for="rdo21">
-                            <input type="radio" name="rdo" id="rdo21" value="1">
-                            opt1
-                        </label>
-                        <label for="rdo22">
-                            <input type="radio" name="rdo" id="rdo22" value="2">
-                            opt2
-                        </label>
-                    </div>
-                    <div class="hd-form-group">
-                        <input type="submit" name="btn" value="Default Button">
-                        <input type="submit" class="hd-btn-default" name="btn" value="hd-btn-default">
-                        <input type="submit" class="hd-btn-gray" name="btn" value="hd-btn-gray">
-                        <input type="submit" class="hd-btn-white" name="btn" value="hd-btn-white">
-                    </div>
-                </form>
+                </div>
             </section>
 
             <section>
