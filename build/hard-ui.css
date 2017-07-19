@@ -431,11 +431,6 @@ ins {
   display: block;
   width: 100%;
 }
-.hd-cols-1:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hd-cols-2 {
   display: -webkit-box;
@@ -450,11 +445,6 @@ ins {
 .hd-cols-2 .col {
   display: block;
   width: 50%;
-}
-.hd-cols-2:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .hd-cols-3 {
@@ -471,11 +461,6 @@ ins {
   display: block;
   width: 33.33333%;
 }
-.hd-cols-3:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hd-cols-4 {
   display: -webkit-box;
@@ -490,11 +475,6 @@ ins {
 .hd-cols-4 .col {
   display: block;
   width: 25%;
-}
-.hd-cols-4:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .hd-cols-5 {
@@ -511,11 +491,6 @@ ins {
   display: block;
   width: 20%;
 }
-.hd-cols-5:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hd-cols-6 {
   display: -webkit-box;
@@ -530,11 +505,6 @@ ins {
 .hd-cols-6 .col {
   display: block;
   width: 16.66667%;
-}
-.hd-cols-6:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .hd-cols-7 {
@@ -551,11 +521,6 @@ ins {
   display: block;
   width: 14.28571%;
 }
-.hd-cols-7:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hd-cols-8 {
   display: -webkit-box;
@@ -570,11 +535,6 @@ ins {
 .hd-cols-8 .col {
   display: block;
   width: 12.5%;
-}
-.hd-cols-8:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .hd-cols-9 {
@@ -591,11 +551,6 @@ ins {
   display: block;
   width: 11.11111%;
 }
-.hd-cols-9:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hd-cols-10 {
   display: -webkit-box;
@@ -610,11 +565,6 @@ ins {
 .hd-cols-10 .col {
   display: block;
   width: 10%;
-}
-.hd-cols-10:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .hd-cols-11 {
@@ -631,11 +581,6 @@ ins {
   display: block;
   width: 9.09091%;
 }
-.hd-cols-11:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hd-cols-12 {
   display: -webkit-box;
@@ -650,11 +595,6 @@ ins {
 .hd-cols-12 .col {
   display: block;
   width: 8.33333%;
-}
-.hd-cols-12:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .hd-cols-13 {
@@ -671,11 +611,6 @@ ins {
   display: block;
   width: 7.69231%;
 }
-.hd-cols-13:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hd-cols-14 {
   display: -webkit-box;
@@ -690,11 +625,6 @@ ins {
 .hd-cols-14 .col {
   display: block;
   width: 7.14286%;
-}
-.hd-cols-14:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .hd-cols-15 {
@@ -711,11 +641,6 @@ ins {
   display: block;
   width: 6.66667%;
 }
-.hd-cols-15:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hd-cols-16 {
   display: -webkit-box;
@@ -730,11 +655,6 @@ ins {
 .hd-cols-16 .col {
   display: block;
   width: 6.25%;
-}
-.hd-cols-16:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .hd-cols-17 {
@@ -751,11 +671,6 @@ ins {
   display: block;
   width: 5.88235%;
 }
-.hd-cols-17:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hd-cols-18 {
   display: -webkit-box;
@@ -770,11 +685,6 @@ ins {
 .hd-cols-18 .col {
   display: block;
   width: 5.55556%;
-}
-.hd-cols-18:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .hd-cols-19 {
@@ -791,11 +701,6 @@ ins {
   display: block;
   width: 5.26316%;
 }
-.hd-cols-19:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hd-cols-20 {
   display: -webkit-box;
@@ -810,11 +715,6 @@ ins {
 .hd-cols-20 .col {
   display: block;
   width: 5%;
-}
-.hd-cols-20:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .hd-cols-21 {
@@ -831,11 +731,6 @@ ins {
   display: block;
   width: 4.7619%;
 }
-.hd-cols-21:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hd-cols-22 {
   display: -webkit-box;
@@ -850,11 +745,6 @@ ins {
 .hd-cols-22 .col {
   display: block;
   width: 4.54545%;
-}
-.hd-cols-22:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .hd-cols-23 {
@@ -871,11 +761,6 @@ ins {
   display: block;
   width: 4.34783%;
 }
-.hd-cols-23:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hd-cols-24 {
   display: -webkit-box;
@@ -890,11 +775,6 @@ ins {
 .hd-cols-24 .col {
   display: block;
   width: 4.16667%;
-}
-.hd-cols-24:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .hd-row {
