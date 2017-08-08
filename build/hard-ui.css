@@ -131,7 +131,6 @@ header, footer, nav, section, main, article, aside, dialog, figcaption, figure, 
 h1, h2, h3, h4, h5, h6 {
   font-size: 1.0rem;
   line-height: 2.4rem;
-  margin-top: 1rem;
 }
 
 h1 {
@@ -391,10 +390,6 @@ ins {
 
 .hd-list {
   margin: 1rem 0;
-}
-
-.hd-card {
-  margin: 0 1rem;
 }
 
 .hd-cols.hd-middle {
@@ -2317,7 +2312,6 @@ ins {
 
 .hd-card {
   display: block;
-  margin: 1rem 0.5rem;
   border: 1px solid #ddd;
 }
 .hd-card .hd-card-image {
