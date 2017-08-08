@@ -2072,7 +2072,7 @@ ins {
   display: inline-block;
 }
 .hd-form-block .hd-form-group {
-  padding: 0.5rem;
+  padding: 0 0.5rem 1rem 0.5rem;
 }
 
 .hd-form-inline {

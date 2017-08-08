@@ -95,7 +95,7 @@
     }
 
     .hd-form-group {
-        padding: #{$spacer/2};
+        padding: 0 #{$spacer/2} $spacer #{$spacer/2};
     }
 
 }
