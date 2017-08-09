@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.hd-color-error * {
+    color: $color-error !important;
+    border-color: $color-error !important;
+}
+
+.hd-color-safe * {
+    color: $color-safe !important;
+    border-color: $color-safe !important;
+}

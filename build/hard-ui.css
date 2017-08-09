@@ -2066,6 +2066,12 @@ ins {
 .hd-form-block .hd-form-group {
   padding: 0 0.5rem 1rem 0.5rem;
 }
+.hd-form-block .hd-form-group p {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color: #333;
+  margin-left: 1rem;
+}
 
 .hd-form-inline {
   display: inline;
@@ -2337,6 +2343,15 @@ ins {
   .hd-card .hd-card-body {
     padding: 1rem 0.33333rem;
   }
+}
+.hd-color-error * {
+  color: #d7368b !important;
+  border-color: #d7368b !important;
+}
+
+.hd-color-safe * {
+  color: #6cb43a !important;
+  border-color: #6cb43a !important;
 }
 
 /*# sourceMappingURL=hard-ui.css.map */
