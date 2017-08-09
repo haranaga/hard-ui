@@ -872,7 +872,55 @@
                                 <input type="text" name="safe" value="Safe color">
                                 <p>Good input!</p>
                             </div>
+                            <div class="hd-form-group hd-color-error">
+                                <label class="hd-form-label" for="rdo_c">Error</label>
+                                <label for="rdo21">
+                                    <input type="radio" name="rdo_c" id="rdo_c1" value="1">
+                                    opt1
+                                </label>
+                                <p>Choice</p>
+                                <label for="rdo22">
+                                    <input type="radio" name="rdo_c" id="rdo_c2" value="2">
+                                    opt2
+                                </label>
+                                <p>Choice</p>
+                            </div>
+
                         </form>
+
+                        <pre class="brush: xml">
+&lt;form class=&quot;hd-form hd-form-block&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
+    &lt;div class=&quot;hd-form-group&quot;&gt;
+        &lt;label class=&quot;hd-form-label&quot; for=&quot;default&quot;&gt;Default&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;default&quot; value=&quot;Default color&quot;&gt;
+        &lt;p&gt;Please input.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hd-form-group hd-color-error&quot;&gt;
+        &lt;label class=&quot;hd-form-label&quot; for=&quot;default&quot;&gt;Error&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;error&quot; value=&quot;Error color&quot;&gt;
+        &lt;p&gt;Invalid input.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hd-form-group hd-color-safe&quot;&gt;
+        &lt;label class=&quot;hd-form-label&quot; for=&quot;default&quot;&gt;Safe&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;safe&quot; value=&quot;Safe color&quot;&gt;
+        &lt;p&gt;Good input!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hd-form-group hd-color-error&quot;&gt;
+        &lt;label class=&quot;hd-form-label&quot; for=&quot;rdo_c&quot;&gt;Error&lt;/label&gt;
+        &lt;label for=&quot;rdo21&quot;&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;rdo_c&quot; id=&quot;rdo_c1&quot; value=&quot;1&quot;&gt;
+            opt1
+        &lt;/label&gt;
+        &lt;p&gt;Choice&lt;/p&gt;
+        &lt;label for=&quot;rdo22&quot;&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;rdo_c&quot; id=&quot;rdo_c2&quot; value=&quot;2&quot;&gt;
+            opt2
+        &lt;/label&gt;
+        &lt;p&gt;Choice&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+                        </pre>
+
                     </div>
 
                 </div>
