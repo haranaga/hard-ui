@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+.hd-sticky-footer {
+    margin-bottom: 1.5rem;
+
+    footer {
+        position: absolute;
+        bottom:0;
+        height: 1.5rem;
+    }
+}
 .hd-wrapper {
     margin:0 auto;
     width: 100%;

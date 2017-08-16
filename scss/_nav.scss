@@ -3,7 +3,8 @@
 .hd-nav {
     background-color: $color-control;
     width:100%;
-
+    color: $color-hilight;
+    
     &.hd-nav-fixed-top {
         position: fixed;
         top:0;
