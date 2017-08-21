@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@mixin hd-message-base {
+    display:block;
+    //width: 100%;
+    padding: 1.5rem;
+    margin: 1.0rem;
+    border: 1px solid $color-darken;
+}
+
+.hd-message-error {
+    @include hd-message-base;
+    background-color: $color-error;
+    color: $color-background;
+    font-weight: bold;
+}
+
+.hd-message-success {
+    @include hd-message-base;
+    background-color: $color-safe;
+    color: $color-background;
+    font-weight: bold;
+}
+
+.hd-message-notice {
+    @include hd-message-base;
+    background-color: $color-notice;
+    color: $color-background;
+    font-weight: bold;
+}
+
+.hd-message-warning {
+    @include hd-message-base;
+    background-color: $color-warning;
+    color: $color-background;
+    font-weight: bold;
+}

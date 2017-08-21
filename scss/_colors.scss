@@ -9,3 +9,13 @@
     color: $color-safe !important;
     border-color: $color-safe !important;
 }
+
+.hd-color-notice * {
+    color: $color-notice !important;
+    border-color: $color-notice !important;
+}
+
+.hd-color-warning * {
+    color: $color-warning !important;
+    border-color: $color-warning !important;
+}

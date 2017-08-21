@@ -2383,4 +2383,54 @@ ins {
   border-color: #6cb43a !important;
 }
 
+.hd-color-notice * {
+  color: #2a6ec8 !important;
+  border-color: #2a6ec8 !important;
+}
+
+.hd-color-warning * {
+  color: #998f37 !important;
+  border-color: #998f37 !important;
+}
+
+.hd-message-error {
+  display: block;
+  padding: 1.5rem;
+  margin: 1.0rem;
+  border: 1px solid #EFEFEF;
+  background-color: #d7368b;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.hd-message-success {
+  display: block;
+  padding: 1.5rem;
+  margin: 1.0rem;
+  border: 1px solid #EFEFEF;
+  background-color: #6cb43a;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.hd-message-notice {
+  display: block;
+  padding: 1.5rem;
+  margin: 1.0rem;
+  border: 1px solid #EFEFEF;
+  background-color: #2a6ec8;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.hd-message-warning {
+  display: block;
+  padding: 1.5rem;
+  margin: 1.0rem;
+  border: 1px solid #EFEFEF;
+  background-color: #998f37;
+  color: #FFF;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=hard-ui.css.map */
