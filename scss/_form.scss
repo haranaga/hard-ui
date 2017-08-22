@@ -12,7 +12,14 @@
     label {
         line-height: $line-height-base;
     }
-    input[type="text"],input[type="password"],input[type="search"] {
+    input[type="text"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="email"]
+
+    {
         height:$object-height;
         @include css3(box-sizing, border-box);
         padding: 0 $spacer;
@@ -76,7 +83,13 @@
     label {
         display:block;
     }
-    input[type="text"], input[type="password"], input[type="search"], input[type="date"] {
+    input[type="text"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="email"],     
+    input[type="date"] {
         display:block;
         width:100%;
     }

@@ -118,7 +118,12 @@ table {
 }
 
 // form
- input[type="text"],input[type="password"], textarea {
+ input[type="text"],
+ input[type="password"],
+ input[type="tel"],
+ input[type="url"],
+ input[type="email"],
+ textarea {
     font-size: 1.0rem;
     background: none;
     @include css3(appearance, none);

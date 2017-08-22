@@ -231,7 +231,12 @@ table td {
   padding: 0.5rem;
 }
 
-input[type="text"], input[type="password"], textarea {
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+textarea {
   font-size: 1.0rem;
   background: none;
   -webkit-appearance: none;
@@ -256,7 +261,12 @@ input[type="text"], input[type="password"], textarea {
   height: 2.4rem;
   padding: 0;
 }
-input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+textarea:focus {
   border-color: #333;
 }
 
@@ -1994,7 +2004,12 @@ ins {
 .hd-form label {
   line-height: 1.5rem;
 }
-.hd-form input[type="text"], .hd-form input[type="password"], .hd-form input[type="search"] {
+.hd-form input[type="text"],
+.hd-form input[type="password"],
+.hd-form input[type="search"],
+.hd-form input[type="tel"],
+.hd-form input[type="url"],
+.hd-form input[type="email"] {
   height: 2.4rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2069,7 +2084,13 @@ ins {
 .hd-form-block label {
   display: block;
 }
-.hd-form-block input[type="text"], .hd-form-block input[type="password"], .hd-form-block input[type="search"], .hd-form-block input[type="date"] {
+.hd-form-block input[type="text"],
+.hd-form-block input[type="password"],
+.hd-form-block input[type="search"],
+.hd-form-block input[type="tel"],
+.hd-form-block input[type="url"],
+.hd-form-block input[type="email"],
+.hd-form-block input[type="date"] {
   display: block;
   width: 100%;
 }
@@ -2395,8 +2416,7 @@ ins {
 
 .hd-message-error {
   display: block;
-  padding: 1.5rem;
-  margin: 1.0rem;
+  padding: 1rem 1.5rem;
   border: 1px solid #EFEFEF;
   background-color: #d7368b;
   color: #FFF;
@@ -2405,8 +2425,7 @@ ins {
 
 .hd-message-success {
   display: block;
-  padding: 1.5rem;
-  margin: 1.0rem;
+  padding: 1rem 1.5rem;
   border: 1px solid #EFEFEF;
   background-color: #6cb43a;
   color: #FFF;
@@ -2415,8 +2434,7 @@ ins {
 
 .hd-message-notice {
   display: block;
-  padding: 1.5rem;
-  margin: 1.0rem;
+  padding: 1rem 1.5rem;
   border: 1px solid #EFEFEF;
   background-color: #2a6ec8;
   color: #FFF;
@@ -2425,8 +2443,7 @@ ins {
 
 .hd-message-warning {
   display: block;
-  padding: 1.5rem;
-  margin: 1.0rem;
+  padding: 1rem 1.5rem;
   border: 1px solid #EFEFEF;
   background-color: #998f37;
   color: #FFF;
