@@ -88,7 +88,7 @@
     input[type="search"],
     input[type="tel"],
     input[type="url"],
-    input[type="email"],     
+    input[type="email"],
     input[type="date"] {
         display:block;
         width:100%;
@@ -110,11 +110,13 @@
     .hd-form-group {
         padding: 0 #{$spacer/2} $spacer #{$spacer/2};
 
-        p {
-            font-size: 0.7rem;
-            line-height: 1.2rem;
-            color: $color-label;
-            margin-left: $spacer;
+        .hd-form-message {
+            p {
+                font-size: 0.7rem;
+                line-height: 1.2rem;
+                color: $color-label;
+                margin-left: $spacer;
+            }            
         }
     }
 

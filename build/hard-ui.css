@@ -2108,7 +2108,7 @@ ins {
 .hd-form-block .hd-form-group {
   padding: 0 0.5rem 1rem 0.5rem;
 }
-.hd-form-block .hd-form-group p {
+.hd-form-block .hd-form-group .hd-form-message p {
   font-size: 0.7rem;
   line-height: 1.2rem;
   color: #333;
