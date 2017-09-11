@@ -14,11 +14,11 @@
     width: 100%;
 }
 .hd-container {
-    margin:0 $spacer*2;
+    margin:$spacer $spacer*2;
 }
 @media screen and (max-width:$breakpoint-s) {
     .hd-container {
-        margin:0 $spacer/3;
+        margin:$spacer/2 $spacer/3;
     }
 }
 
@@ -36,6 +36,10 @@
 
 .hd-right {
     float:right;
+}
+
+.hd-inline {
+    display:inline;
 }
 
 .clearfix::after {

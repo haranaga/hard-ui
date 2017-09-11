@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.hd-table {
+    margin: 0 auto;
+    th {
+        word-wrap: break-word;
+        word-break: keep-all;
+    }
+    td {
+        word-wrap:normal;
+        word-break: keep-all;
+    }
+}

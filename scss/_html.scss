@@ -88,6 +88,8 @@ mark {
 // anchor text
 a {
     color: $color-link;
+    text-decoration: none;
+    
     @include transition;
     &:hover {
         color: lighten($color-link, 10%);

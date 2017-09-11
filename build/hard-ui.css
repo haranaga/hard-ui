@@ -199,6 +199,7 @@ mark {
 
 a {
   color: #000;
+  text-decoration: none;
   -webkit-transition: all 0.1s ease 0s;
   -moz-transition: all 0.1s ease 0s;
   -ms-transition: all 0.1s ease 0s;
@@ -385,12 +386,12 @@ ins {
 }
 
 .hd-container {
-  margin: 0 2rem;
+  margin: 1rem 2rem;
 }
 
 @media screen and (max-width: 600px) {
   .hd-container {
-    margin: 0 0.33333rem;
+    margin: 0.5rem 0.33333rem;
   }
 }
 .hd-center {
@@ -407,6 +408,10 @@ ins {
 
 .hd-right {
   float: right;
+}
+
+.hd-inline {
+  display: inline;
 }
 
 .clearfix::after {
@@ -1573,13 +1578,12 @@ ins {
   width: auto;
   padding: 0 1rem;
   line-height: 2.5rem;
-  background-color: #333;
   color: #CCC;
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
 }
-.hd-nav a:hover {
+.hd-nav li.active, .hd-nav a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: #FFF;
 }
@@ -1599,8 +1603,8 @@ ins {
   font-size: 1em;
 }
 .hd-nav ul.hd-nav-y li a {
-  border-top: 1px solid #404040;
-  border-bottom: 1px solid #262626;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .hd-nav ul.hd-nav-x {
   position: relative;
@@ -1619,8 +1623,19 @@ ins {
   font-size: 1rem;
 }
 .hd-nav ul.hd-nav-x li a {
-  border-left: 1px solid #404040;
-  border-right: 1px solid #262626;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.hd-nav.hd-nav-gray {
+  background-color: #CCC;
+  color: #333;
+  .hd-nav-brand-color: #333;
+}
+.hd-nav.hd-nav-gray a, .hd-nav.hd-nav-gray p {
+  color: #333;
+}
+.hd-nav.hd-nav-gray li.active {
+  background-color: #FFF;
 }
 
 .hd-border-1 {
@@ -2134,6 +2149,7 @@ ins {
 
 .hd-form-label {
   font-weight: bold;
+  text-align: left;
   color: #333;
 }
 
@@ -2448,6 +2464,48 @@ ins {
   background-color: #998f37;
   color: #FFF;
   font-weight: bold;
+}
+
+.hd-pager {
+  display: inline;
+  list-style: none;
+}
+.hd-pager .hd-pager-item {
+  display: inline-block;
+  border: 1px solid #ddd;
+  min-width: 2rem;
+  max-width: 4rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.hd-pager .hd-pager-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+.hd-pager .hd-pager-item.active {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+}
+.hd-pager .hd-pager-item.disabled a {
+  color: #ddd;
+}
+.hd-pager .hd-pager-item:hover {
+  background-color: #EFEFEF;
+}
+
+.hd-table {
+  margin: 0 auto;
+}
+.hd-table th {
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.hd-table td {
+  word-wrap: normal;
+  word-break: keep-all;
 }
 
 /*# sourceMappingURL=hard-ui.css.map */

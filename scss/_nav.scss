@@ -4,7 +4,7 @@
     background-color: $color-control;
     width:100%;
     color: $color-hilight;
-    
+
     &.hd-nav-fixed-top {
         position: fixed;
         top:0;
@@ -26,14 +26,14 @@
         width:auto;
         padding:0 $spacer;
         line-height: 2.5rem;
-        background-color: $color-control;
+        // background-color: $color-control;
         color: $color-hilight;
         text-decoration: none;
         text-align: center;
         white-space: nowrap;
     }
 
-    a:hover {
+    li.active, a:hover {
         background-color: rgba(#ffffff, 0.1);
         color:$color-flash;
     }
@@ -56,8 +56,8 @@
             display: block;
             font-size:1em;
             a{
-                border-top: 1px solid lighten($color-control, 5%);
-                border-bottom: 1px solid darken($color-control, 5%);
+                border-top: 1px solid rgba(255,255,255, .05);
+                border-bottom: 1px solid rgba(0,0,0, .10);
             }
 
         }
@@ -80,11 +80,30 @@
             display:inline-block;
             font-size: 1rem;
             a{
-                border-left: 1px solid lighten($color-control, 5%);
-                border-right: 1px solid darken($color-control, 5%);
+                border-left: 1px solid rgba(255,255,255, .05);
+                border-right: 1px solid rgba(0,0,0, .10);
             }
         }
 
+    }
+
+
+
+    &.hd-nav-gray {
+        background-color: $color-nav-gray;
+        color : $color-text;
+
+        .hd-nav-brand: {
+            color: $color-text;
+        }
+
+        a,p {
+            color: $color-text;
+        }
+
+        li.active {
+            background-color: $color-background;
+        }
     }
 
 }
