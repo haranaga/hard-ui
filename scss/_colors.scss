@@ -1,21 +1,26 @@
 @charset "UTF-8";
 
-.hd-color-error * {
+.hd-color-error, .hd-color-error * {
     color: $color-error !important;
     border-color: $color-error !important;
 }
 
-.hd-color-safe * {
+.hd-color-safe,.hd-color-safe * {
     color: $color-safe !important;
     border-color: $color-safe !important;
 }
 
-.hd-color-notice * {
+.hd-color-success,.hd-color-success * {
+    color: $color-safe !important;
+    border-color: $color-safe !important;
+}
+
+.hd-color-notice,.hd-color-notice * {
     color: $color-notice !important;
     border-color: $color-notice !important;
 }
 
-.hd-color-warning * {
+.hd-color-warning,.hd-color-warning * {
     color: $color-warning !important;
     border-color: $color-warning !important;
 }
