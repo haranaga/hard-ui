@@ -108,6 +108,11 @@
 
 }
 
+.hd-center-float {
+    width: $breakpoint-s;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
 
 // common
 @for $i from 1 through $grid-columns {
@@ -128,6 +133,10 @@
             width: #{100%/$grid-columns * $i} !important;
             max-width: #{100%/$grid-columns * $i} !important;
         }
+    }
+
+    .hd-center-float {
+        width: 100%;
     }
 }
 

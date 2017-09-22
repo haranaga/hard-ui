@@ -208,6 +208,7 @@ a {
 }
 a:hover {
   color: #1a1a1a;
+  text-decoration: underline;
 }
 
 table {
@@ -832,6 +833,12 @@ ins {
   align-items: flex-end;
 }
 
+.hd-center-float {
+  width: 600px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
 .col-1, .col-s-1, .col-m-1, .col-l-1 {
   width: 4.16667%;
   max-width: 4.16667%;
@@ -1191,6 +1198,10 @@ ins {
   .col-s-24 {
     width: 100% !important;
     max-width: 100% !important;
+  }
+
+  .hd-center-float {
+    width: 100%;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 960px) {

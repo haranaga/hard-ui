@@ -89,10 +89,11 @@ mark {
 a {
     color: $color-link;
     text-decoration: none;
-    
+
     @include transition;
     &:hover {
         color: lighten($color-link, 10%);
+        text-decoration: underline;
     }
 }
 
